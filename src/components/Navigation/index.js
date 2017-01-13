@@ -11,7 +11,7 @@ const Navigation = () => (
           className={ styles.itemInner }
           to="/user-guide/"
         >
-          { "User guide" }
+          { "用户指南" }
         </Link>
         <ul className={ styles.secondaryItems }>
           <li className={ styles.itemSecondary }>
@@ -19,7 +19,7 @@ const Navigation = () => (
               className={ styles.itemInnerSecondary }
               to="/user-guide/rules/"
             >
-              { "Rules" }
+              { "规则" }
             </Link>
           </li>
           <li className={ styles.itemSecondary }>
@@ -27,7 +27,7 @@ const Navigation = () => (
               className={ styles.itemInnerSecondary }
               to="/user-guide/plugins/"
             >
-              { "Plugins" }
+              { "插件" }
             </Link>
           </li>
           <li className={ styles.itemSecondary }>
@@ -45,7 +45,7 @@ const Navigation = () => (
           className={ styles.itemInner }
           to="/developer-guide/"
         >
-          { "Developer guide" }
+          { "开发指南" }
         </Link>
       </li>
       <li className={ styles.item }>
