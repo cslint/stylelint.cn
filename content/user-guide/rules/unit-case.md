@@ -2,6 +2,8 @@
 
 Specify lowercase or uppercase for units.
 
+指定单位的大小写。
+
 ```css
     a { width: 10px; }
 /**              ↑
@@ -10,11 +12,15 @@ Specify lowercase or uppercase for units.
 
 ## Options
 
-`string`: `"lower"|"upper"`
+```js
+string: "lower"|"upper"
+```
 
 ### `"lower"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -48,6 +54,8 @@ a {
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a {
   width: 10px;
@@ -63,6 +71,8 @@ a {
 ### `"upper"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -95,6 +105,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

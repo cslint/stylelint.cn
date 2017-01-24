@@ -2,6 +2,8 @@
 
 Require or disallow an empty line before at-rules.
 
+要求或禁止在 at 规则之前有空行。
+
 ```css
 a {}
           /* ← */
@@ -12,15 +14,23 @@ a {}
 
 If the at-rule is the very first node in a stylesheet then it is ignored.
 
+如果 at 规则是样式表中的第一个节点，它将被忽略。
+
 ## Options
 
-`string`: `"always"|"never"`
+```js
+string: "always"|"never"
+```
 
 ### `"always"`
 
 There *must always* be an empty line before at-rules.
 
+在 at 规则之前必须有一行空行。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {} @media {}
@@ -33,6 +43,8 @@ a {}
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a {}
 
@@ -43,7 +55,11 @@ a {}
 
 There *must never* be an empty line before at-rules.
 
+在 at 规则之前禁止有空行。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {}
@@ -52,6 +68,8 @@ a {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {} @media {}
@@ -70,9 +88,15 @@ a {}
 
 Reverse the primary option for at-rules that are nested.
 
+对于嵌套的 at 规则，颠倒主选项功能。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -89,6 +113,8 @@ b {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -106,11 +132,19 @@ b {
 
 Reverse the primary option for blockless at-rules that follow another blockless at-rule with the same name.
 
+对于不在块内的 at 规则，而且这个 at 规则紧随另一个同名的不在块内的 at 规则。
+
 This means that you can group your blockless at-rules by name.
+
+这意味着你可以对非块内的 at 规则根据名称进行分组。
 
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are *not* considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @charset "UTF-8";
@@ -134,9 +168,15 @@ a {
 
 Reverse the primary option for at-rules within a blockless group.
 
+对于非块内的 at 规则，颠倒主选项功能。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @import url(x.css);
@@ -147,6 +187,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @import url(x.css);
@@ -159,9 +201,15 @@ The following patterns are *not* considered warnings:
 
 Reverse the primary option for at-rules that are nested and the first child of their parent node.
 
+对于嵌套的而且是父节点中的第一个子节点的 at 规则，颠倒注选项功能。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -177,6 +225,8 @@ b {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -197,7 +247,11 @@ b {
 
 Ignore at-rules that come after a comment.
 
+忽略注释之后的 at 规则。
+
 The following patterns are *not* considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 /* comment */
@@ -214,9 +268,15 @@ The following patterns are *not* considered warnings:
 
 Ignore at-rules that are nested.
 
+忽略嵌套的 at 规则。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -246,11 +306,19 @@ b {
 
 Ignore blockless at-rules that follow another blockless at-rule with the same name.
 
+忽略不在块内的 at 规则，而且这个 at 规则紧随另一个同名的不在块内的 at 规则。
+
 This means that you can group your blockless at-rules by name.
+
+这意味着你可以对非块内的 at 规则根据名称进行分组。
 
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are *not* considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 
@@ -275,9 +343,15 @@ a {
 
 Ignore at-rules within a blockless group.
 
+忽略不在块内的 at 规则。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @import url(x.css);
@@ -298,15 +372,23 @@ The following patterns are *not* considered warnings:
 
 Ignore specified at-rules.
 
+忽略指定的 at 规则。
+
 For example, with `"always"`.
 
+例如，在 `"always"` 选项下。
+
 Given:
+
+给出：
 
 ```js
 ["import"]
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @charset "UTF-8";

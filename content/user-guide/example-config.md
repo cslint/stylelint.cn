@@ -2,7 +2,11 @@
 
 This example config lists all of the [rules](rules.md) and their primary options. You can remove ([or turn off](configuration.md#rules)) the rules you don't want and edit the primary option of each rule to your liking.
 
+这个示例配置所有的 [rules](rules.md) 和 它们的主要选项。你可以移除 ([或关闭](configuration.md#rules)) 你不想要的规则，根据你个人喜好编辑每个规则的选项。
+
 You might want to learn a little about [how rules are named and how they work together](about-rules.md), to get a better idea of what each rule does.
+
+为了更好的了解每个规则，你可能想要学习一下 [规则如何命名，如果协同工作](about-rules.md)。
 
 ```json
 {

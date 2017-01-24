@@ -2,6 +2,8 @@
 
 Disallow empty blocks.
 
+禁止出现空块。
+
 ```css
  a { }
 /** ↑
@@ -13,6 +15,8 @@ Disallow empty blocks.
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {}
@@ -27,6 +31,8 @@ a { }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink; }

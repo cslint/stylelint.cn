@@ -2,6 +2,8 @@
 
 Specify lowercase or uppercase for at-rules names.
 
+指定 at 规则名称的大小写。
+
 ```css
    @media (min-width: 10px) {}
 /** ↑
@@ -10,13 +12,19 @@ Specify lowercase or uppercase for at-rules names.
 
 Only lowercase at-rule names are valid in SCSS.
 
+在 SCSS 只有小写的 at 规则名称是有效的。
+
 ## Options
 
-`string`: `"lower"|"upper"`
+```js
+string: "lower"|"upper"
+```
 
 ### `"lower"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @Charset 'UTF-8';
@@ -44,6 +52,8 @@ The following patterns are considered warnings:
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 @charset 'UTF-8';
 ```
@@ -55,6 +65,8 @@ The following patterns are *not* considered warnings:
 ### `"upper"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @Charset 'UTF-8';
@@ -81,6 +93,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @CHARSET 'UTF-8';

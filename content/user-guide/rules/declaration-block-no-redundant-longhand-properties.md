@@ -2,6 +2,8 @@
 
 Disallow longhand properties that can be combined into one shorthand property.
 
+禁止使用可以缩写却不缩写的属性。
+
 ```css
   a {
     padding-top: 1px;
@@ -14,6 +16,8 @@ Disallow longhand properties that can be combined into one shorthand property.
 
 The longhand properties in the example above can be more concisely written as:
 
+上面的例子中的普通写法的属性可以更简洁的写为：
+
 ```css
 a {
   padding: 1px 2px 3px 4px;
@@ -22,28 +26,36 @@ a {
 
 This rule will only warn if you've used the longhand equivalent of *all* the properties that the shorthand will set.
 
+该规则只对这种情况发出警告：你使用的普通写法等同于缩写写法里的所有属性。
+
 This rule warns when the following shorthand properties can be used:
 
--   `padding`
--   `margin`
--   `background`
--   `font`
--   `border`
--   `border-top`
--   `border-bottom`
--   `border-left`
--   `border-right`
--   `border-width`
--   `border-style`
--   `border-color`
--   `border-radius`
--   `transition`
+该规则只对以下缩写属性发出警告：
+
+```js
+padding
+margin
+background
+font
+border
+border-top
+border-bottom
+border-left
+border-right
+border-width
+border-style
+border-color
+border-radius
+transition
+```
 
 ## Options
 
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -76,6 +88,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -116,11 +130,15 @@ a {
 
 Given:
 
+给出：
+
 ```js
 ["padding", "/border/"]
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

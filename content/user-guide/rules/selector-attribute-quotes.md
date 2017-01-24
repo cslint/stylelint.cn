@@ -2,6 +2,8 @@
 
 Require or disallow quotes for attribute values.
 
+要求或禁止特性值使用引号。
+
 ```css
 [target="_blank"] {}
 /**     ↑      ↑
@@ -10,13 +12,19 @@ Require or disallow quotes for attribute values.
 
 ## Options
 
-`string`: `"always"|"never"`
+```js
+string: "always"|"never"
+```
 
 ### `"always"`
 
 Attribute values *must always* be quoted.
 
+特性值必须用引号引起来。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 [title=flower] {}
@@ -27,6 +35,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 [title] {}
@@ -52,7 +62,11 @@ The following patterns are *not* considered warnings:
 
 Attribute values *must never* be quoted.
 
+特性值禁止用引号引起来。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 [target="_blank"] {}
@@ -71,6 +85,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 [title] {}

@@ -2,6 +2,8 @@
 
 Disallow duplicate properties within declaration blocks.
 
+在声明的块中中禁止出现重复的属性。
+
 ```css
 a { color: pink; color: orange; }
 /** ↑            ↑
@@ -10,11 +12,15 @@ a { color: pink; color: orange; }
 
 This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
+该规则忽略变量 (`$sass`，`@less`，`--custom-property`)。
+
 ## Options
 
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: pink; color: orange; }
@@ -25,6 +31,8 @@ a { color: pink; background: orange; color: orange }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink; }
@@ -40,9 +48,15 @@ a { color: pink; background: orange; }
 
 Ignore consecutive duplicated properties.
 
+忽略连续的重复属性。
+
 They can prove to be useful fallbacks for older browsers.
 
+它们对老版本浏览器的兼容很有用。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 p {
@@ -53,6 +67,8 @@ p {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 p {
@@ -66,9 +82,15 @@ p {
 
 Ignore consecutive duplicated properties with different values.
 
+忽略连续的不同值的重复属性。
+
 Including duplicate properties (fallbacks) is useful to deal with older browsers support for CSS properties. E.g. using 'px' units when 'rem' isn't available.
 
+重复的属性在老版本浏览器对 CSS 属性的兼容很有用。如，当 'rem' 不可用时，就使用 'px'。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 /* properties with the same value */
@@ -90,6 +112,8 @@ p {
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 p {
   font-size: 16px;
@@ -102,13 +126,19 @@ p {
 
 Ignore duplicates of specific properties.
 
+忽略重复的指定属性。
+
 Given:
+
+给出：
 
 ```js
 ["color", "/background\-/"]
 ```
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: pink; background: orange; background: white; }
@@ -119,6 +149,8 @@ a { background: orange; color: pink; background: white; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink; color: orange; background-color: orange; background-color: white; }

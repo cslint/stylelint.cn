@@ -1,25 +1,40 @@
+---
+lang: en
+---
 # stylelint
 
-[![NPM version](http://img.shields.io/npm/v/stylelint.svg)](https://www.npmjs.org/package/stylelint) [![Build Status](https://travis-ci.org/stylelint/stylelint.svg?branch=master)](https://travis-ci.org/stylelint/stylelint) [![Build status](https://ci.appveyor.com/api/projects/status/wwajr0886e00g8je/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint/branch/master) [![NPM Downloads](https://img.shields.io/npm/dm/stylelint.svg)](https://www.npmjs.org/package/stylelint) [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=9282518)](https://www.bountysource.com/trackers/9282518-stylelint?utm_source=9282518&utm_medium=shield&utm_campaign=TRACKER_BADGE)
+<!--[![NPM version](http://img.shields.io/npm/v/stylelint.svg)](https://www.npmjs.org/package/stylelint) [![Build Status](https://travis-ci.org/stylelint/stylelint.svg?branch=master)](https://travis-ci.org/stylelint/stylelint) [![Build status](https://ci.appveyor.com/api/projects/status/wwajr0886e00g8je/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint/branch/master) [![NPM Downloads](https://img.shields.io/npm/dm/stylelint.svg)](https://www.npmjs.org/package/stylelint) [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=9282518)](https://www.bountysource.com/trackers/9282518-stylelint?utm_source=9282518&utm_medium=shield&utm_campaign=TRACKER_BADGE)-->
+
 
 A mighty, modern CSS linter that helps you enforce consistent conventions and avoid errors in your stylesheets.
+
+一个强大的现代 CSS 检测器，可以让你在样式表中遵循一致的约定和避免错误。
 
 ## Features
 
 -   **Over one hundred and fifty rules:** Including those that:
+-   **超过 150 条规则：**包括：
     -   **Catch errors**: e.g. invalid hex colors, indistinguishable colors, or overriding shorthand properties.
+    -   **捕捉错误**：如无效的十六进制颜色，无法识别的颜色，或覆盖了简写属性。
     -   **Enforce best practices**: e.g. keeping specificity low or disallowing vendor prefixes in your source code.
+    -   **最佳实践**：如，在你的源码中保持小写，或禁用浏览器引擎前缀。
     -   **Control what languages features can be used**: e.g. whitelisting specific units, properties and functions, or disallowing certain selector types.
     -   **Enforce code style conventions**: e.g. checking the spacing around the colon in declarations or specifying patterns for class selectors.
 -   **Support for the latest CSS syntax:** Including custom properties, range context for media features, calc() and nesting.
 -   **Understands *CSS-like* syntaxes:** The linter is powered by [PostCSS](https://github.com/postcss/postcss), so it understands any syntax that PostCSS can parse, including SCSS, [SugarSS](https://github.com/postcss/sugarss), and *experimental support* for Less.
 -   **Completely unopinionated:** Only enable the rules you want, and configure them with options that tailor the linter to your needs.
 -   **Support for plugins:** It's easy to create your own rules and add them to the linter.
+-   **支持插件：**很容易创建你自己的规则，并将它们添加到检测器。
 -   **Automatically fix some stylistic warnings:** By using [stylefmt](https://github.com/morishitter/stylefmt) which supports stylelint configuration files.
+-   **自动修复：**通过使用支持 stylelint 配置文件的[stylefmt](https://github.com/morishitter/stylefmt)可以进行自动修复。
 -   **Shareable configs:** If you don't want to craft your own config, you can extend a shareable config.
+-   **可分享的配置：**如果你不想精雕细琢你自己的配置，你可以继承一个可分享的配置。
 -   **Options validator:** So that you can be confident that your config is valid.
+-   **选项验证器：**你可以非常确信你的配置是有效的。
 -   **Well tested:** Nearly twenty five thousand tests cover the internals and rules.
--   **Growing community**: Used by [Facebook](https://code.facebook.com/posts/879890885467584/improving-css-quality-at-facebook-and-beyond/), [Github](https://github.com/primer/stylelint-config-primer), [Wikimedia](https://github.com/wikimedia/stylelint-config-wikimedia), [GSA](https://github.com/18F/stylelint-rules/), and [WordPress](https://github.com/ntwb/stylelint-config-wordpress/) among others.
+-   **充分的测试：** 将近 25000 个测试用例覆盖所有代码和规则。
+-   **Growing community:** Used by [Facebook](https://code.facebook.com/posts/879890885467584/improving-css-quality-at-facebook-and-beyond/), [Github](https://github.com/primer/stylelint-config-primer), [Wikimedia](https://github.com/wikimedia/stylelint-config-wikimedia), [GSA](https://github.com/18F/stylelint-rules/), and [WordPress](https://github.com/ntwb/stylelint-config-wordpress/) among others.
+-   **日益增长的社区：**[Facebook](https://code.facebook.com/posts/879890885467584/improving-css-quality-at-facebook-and-beyond/)，[Github](https://github.com/primer/stylelint-config-primer)，[Wikimedia](https://github.com/wikimedia/stylelint-config-wikimedia)，[GSA](https://github.com/18F/stylelint-rules/), 和 [WordPress](https://github.com/ntwb/stylelint-config-wordpress/)等等都在使用。
 
 ## Example output
 
@@ -29,7 +44,10 @@ A mighty, modern CSS linter that helps you enforce consistent conventions and av
 
 With stylelint, it's easy to start linting your CSS:
 
+使用 stylelint，可以很容易开始检测你的 CSS：
+
 1.  Decide how you want to use stylelint:
+1.  决定通过什么方式使用 stylelint：
     -   [via the stylelint CLI](/docs/user-guide/cli.md)
     -   [via a plugin for your build tool](/docs/user-guide/complementary-tools.md#build-tool-plugins) (gulp, webpack etc)
     -   [via a plugin for your text editor](/docs/user-guide/complementary-tools.md#editor-plugins) (atom, sublime text etc)

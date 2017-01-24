@@ -2,6 +2,8 @@
 
 Disallow id selectors.
 
+禁用 id 选择器。
+
 ```css
     #foo {}
 /** ↑
@@ -13,6 +15,8 @@ Disallow id selectors.
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 #foo {}
@@ -27,6 +31,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {}

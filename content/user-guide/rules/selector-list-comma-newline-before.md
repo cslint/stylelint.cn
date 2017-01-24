@@ -2,6 +2,8 @@
 
 Require a newline or disallow whitespace before the commas of selector lists.
 
+要求选择器列表的逗号之前有一个换行符或禁止在逗号之前有空白
+
 ```css
     a
     , b { color: pink; }
@@ -11,13 +13,19 @@ Require a newline or disallow whitespace before the commas of selector lists.
 
 ## Options
 
-`string`: `"always"|"always-multi-line"|"never-multi-line"`
+```js
+string: "always"|"always-multi-line"|"never-multi-line"
+```
 
 ### `"always"`
 
 There *must always* be a newline before the commas.
 
+在逗号之前 *必须* 有一个换行符。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a, b { color: pink; }
@@ -29,6 +37,8 @@ b { color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a
@@ -44,7 +54,11 @@ a
 
 There *must always* be a newline before the commas in multi-line selector lists.
 
+在多行选择器列表中，在逗号之前 **必须** 有一个换行符。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a,
@@ -52,6 +66,8 @@ b { color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a, b { color: pink; }
@@ -72,7 +88,11 @@ b { color: pink; }
 
 There *must never* be whitespace before the commas in multi-line selector lists.
 
+在多行选择器列表中，在逗号之前 **禁止** 有空白。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a
@@ -86,6 +106,8 @@ b { color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a,b { color: pink; }

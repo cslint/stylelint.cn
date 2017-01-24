@@ -2,6 +2,8 @@
 
 Specify short or long notation for hex colors.
 
+指定十六进制颜色是否使用缩写。
+
 ```css
 a { color: #fff }
 /**        ↑
@@ -10,11 +12,15 @@ a { color: #fff }
 
 ## Options
 
-`string`: `"short"|"long"`
+```js
+string: "short"|"long"
+```
 
 ### `"short"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: #ffffff; }
@@ -25,6 +31,8 @@ a { color: #fffffaa; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: #fff; }
@@ -42,6 +50,8 @@ a { color: #a4a4a4; }
 
 The following patterns are considered warnings:
 
+以下模式被认为是个警告：
+
 ```css
 a { color: #fff; }
 ```
@@ -51,6 +61,8 @@ a { color: #fffa; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: #ffffff; }

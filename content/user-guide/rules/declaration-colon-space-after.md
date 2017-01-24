@@ -2,6 +2,8 @@
 
 Require a single space or disallow whitespace after the colon of declarations.
 
+在冒号之后要求有一个空格或禁止有空格。
+
 ```css
 a { color: pink }
 /**      ↑
@@ -10,13 +12,19 @@ a { color: pink }
 
 ## Options
 
-`string`: `"always"|"never"|"always-single-line"`
+```js
+string: "always"|"never"|"always-single-line"
+```
 
 ### `"always"`
 
 There *must always* be a single space after the colon.
 
+在冒号之后必须有一个空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color :pink }
@@ -27,6 +35,8 @@ a { color:pink }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color : pink }
@@ -40,7 +50,11 @@ a { color: pink }
 
 There *must never* be whitespace after the colon.
 
+在冒号之后禁止有空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color:pink }
@@ -51,6 +65,8 @@ a { color :pink }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color :pink }
@@ -64,7 +80,11 @@ a { color:pink }
 
 There *must always* be a single space after the colon *if the declaration's value is single-line*.
 
+在单行值列表的冒号之后必须有一个空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -73,6 +93,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

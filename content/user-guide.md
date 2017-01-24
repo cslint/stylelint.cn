@@ -1,16 +1,30 @@
 # User guide
 
 -   [The CLI](user-guide/cli.md): Examples and exit codes for using the CLI.
+-   [The CLI](user-guide/cli.md): 使用命令行的例子和退出码。
 -   [The Node API](user-guide/node-api.md): Options and examples for using the Node API.
+-   [The Node API](user-guide/node-api.md)：使用 Node API 的选项和例子。
 -   [The PostCSS plugin](user-guide/postcss-plugin.md): Options and examples for using the PostCSS plugin.
+-   [The PostCSS plugin](user-guide/postcss-plugin.md)：使用 PostCSS 插件的选项和例子
 -   [Configuration](user-guide/configuration.md): How to configure stylelint.
+-   [Configuration](user-guide/configuration.md)：如何配置stylelint。
 -   [Example config](user-guide/example-config.md): An example config that you can use as a blueprint for your own.
+-   [Example config](user-guide/example-config.md)：一个配置的例子，你可以直接用它做为你自己的配置。
 -   [CSS processors](user-guide/css-processors.md): How to use the linter with a CSS processor, like SCSS or PostCSS plugins.
+-   [CSS processors](user-guide/css-processors.md)：如何使用 CSS processor。
 -   [About rules](user-guide/about-rules.md): An explanation of rule names and how rules work together.
+-   [About rules](user-guide/about-rules.md)：规则名字的解释以及规则是如何协同工作的。
 -   [Rules](user-guide/rules.md): A list of stylelint's rules.
+-   [Rules](user-guide/rules.md)：stylelint 的规则列表。
 -   [Plugins](user-guide/plugins.md): A list of community plugins.
+-   [Plugins](user-guide/plugins.md)：社区插件列表。
 -   [Processors](user-guide/processors.md): A list of community processors.
+-   [Processors](user-guide/processors.md)：社区 processors 列表。
 -   [Complementary tools](user-guide/complementary-tools.md): List of community editor plugins, build tool plugins and other tools.
+-   [Complementary tools](user-guide/complementary-tools.md)：社区编辑器插件，构建工具插件和其它工具列表。
 -   [Release planning](user-guide/release-planning.md): Plans and calls-for-help for upcoming releases.
+-   [Release planning](user-guide/release-planning.md)：计划和即将发布的版本。
 -   [FAQ](user-guide/faq.md): Frequently asked questions about using and configuring stylelint.
+-   [FAQ](user-guide/faq.md)：使用和配置 stylelint 的常见问题。
 -   [Articles](user-guide/articles.md): A collection of articles and tutorials about stylelint.
+-   [Articles](user-guide/articles.md)：关于 stylelint 的文章和教程。

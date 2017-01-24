@@ -2,6 +2,8 @@
 
 Specify lowercase or uppercase for type selectors.
 
+指定类型选择器的大小写。
+
 ```css
     a {}
 /** ↑
@@ -10,11 +12,15 @@ Specify lowercase or uppercase for type selectors.
 
 ## Options
 
-`string`: `"lower"|"upper"`
+```js
+string: "lower"|"upper"
+```
 
 ### `"lower"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 A {}
@@ -25,6 +31,8 @@ LI {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {}
@@ -38,6 +46,8 @@ li {}
 
 The following patterns are considered warnings:
 
+以下模式被认为是个警告：
+
 ```css
 a {}
 ```
@@ -47,6 +57,8 @@ li {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 A {}

@@ -2,6 +2,8 @@
 
 Require a newline or disallow whitespace after the commas of selector lists.
 
+要求选择器列表的逗号之后有一个换行符或禁止在逗号之后有空白
+
 ```css
    a,
    b↑{ color: pink; }
@@ -11,6 +13,8 @@ Require a newline or disallow whitespace after the commas of selector lists.
 
 End-of-line comments are allowed one space after the comma.
 
+对于行尾注释，允许在逗号之后有一个空格。
+
 ```css
 a, /* comment */
 b { color: pink; }
@@ -18,13 +22,19 @@ b { color: pink; }
 
 ## Options
 
-`string`: `"always"|"always-multi-line"|"never-multi-line"`
+```js
+string: "always"|"always-multi-line"|"never-multi-line"
+```
 
 ### `"always"`
 
 There *must always* be a newline after the commas.
 
+在逗号之后 **必须** 有一个换行符。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a, b { color: pink; }
@@ -36,6 +46,8 @@ a
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a,
@@ -52,7 +64,11 @@ b { color: pink; }
 
 There *must always* be a newline after the commas in multi-line selector lists.
 
+在多行选择器列表中，在逗号之后 **必须** 有一个换行符。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a
@@ -60,6 +76,8 @@ a
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a, b { color: pink; }
@@ -80,7 +98,11 @@ b { color: pink; }
 
 There *must never* be whitespace after the commas in multi-line selector lists.
 
+在多行选择器列表中，在逗号之后 **禁止** 有空白。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a
@@ -93,6 +115,8 @@ b { color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a,b { color: pink; }

@@ -2,6 +2,8 @@
 
 Disallow shorthand properties that override related longhand properties.
 
+禁止缩写属性覆盖相关普通写法属性。
+
 ```css
 a { background-repeat: repeat; background: green; }
 /**                            ↑
@@ -10,11 +12,15 @@ a { background-repeat: repeat; background: green; }
 
 In almost every case, this is just an authorial oversight. For more about this behavior, see [MDN's documentation of shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
 
+在几乎所有情况下，这只是作者个人的疏忽。关于这种情况的更多信息，请查看 [MDN's documentation of shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)。
+
 ## Options
 
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -40,6 +46,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { padding: 10px; padding-left: 20px; }

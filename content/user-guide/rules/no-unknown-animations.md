@@ -2,6 +2,8 @@
 
 Disallow animation names that do not correspond to a `@keyframes` declaration.
 
+禁止动画名称与 `@keyframes` 声明不符。
+
 ```css
 a { animation-name: fancy-slide; }
 /**                    ↑
@@ -17,6 +19,8 @@ a { animation: fancy-slide 2s linear; }
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { animation-name: fancy-slide; }
@@ -42,6 +46,8 @@ a { animation-name: jump; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { animation-name: fancy-slide; }
