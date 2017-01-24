@@ -2,6 +2,8 @@
 
 Disallow unknown units.
 
+禁止使用未知单位。
+
 ```css
 a { width: 100pixels; }
 /**           ↑
@@ -10,11 +12,15 @@ a { width: 100pixels; }
 
 This rule considers units defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
 
+该规则只考虑 CSS 规范包括草案中定义的单位。
+
 ## Options
 
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -29,6 +35,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -60,11 +68,15 @@ a {
 
 Given:
 
+给出：
+
 ```js
 ["/^my-/", "custom"]
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

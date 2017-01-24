@@ -2,6 +2,8 @@
 
 Disallow type selectors.
 
+禁用类型选择器。
+
 ```css
     a {}
 /** ↑
@@ -13,6 +15,8 @@ Disallow type selectors.
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {}
@@ -27,6 +31,8 @@ a > [foo] {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 .foo {}
@@ -56,7 +62,11 @@ The following patterns are *not* considered warnings:
 
 Allow compounded type selectors -- i.e. type selectors chained with other selectors.
 
+允许复合类型选择器 -- 如，类型选择器后面跟着一系列其它选择器。
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a.foo {}
@@ -70,7 +80,11 @@ a#bar {}
 
 Allow descendant type selectors.
 
+允许子类型选择器。
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 .foo a {}
@@ -84,11 +98,15 @@ The following patterns are *not* considered warnings:
 
 Given:
 
+给出：
+
 ```js
 ["/^my-/", "custom"]
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 custom {}

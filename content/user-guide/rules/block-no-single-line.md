@@ -2,6 +2,8 @@
 
 Disallow single-line blocks.
 
+禁止出现单行块。
+
 ```css
   a { color: pink; top: 0; }
 /** ↑                      ↑
@@ -13,6 +15,8 @@ Disallow single-line blocks.
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: pink; }
@@ -45,6 +49,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

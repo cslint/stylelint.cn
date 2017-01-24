@@ -2,6 +2,8 @@
 
 Limit the allowed nesting depth.
 
+限制允许嵌套的深度。
+
 ```css
 a { & > b { top: 0; }
 /** ↑
@@ -9,6 +11,8 @@ a { & > b { top: 0; }
 ```
 
 This rule works by checking rules' and at-rules' actual "nesting depth" against your specified max. Here's how nesting depths works:
+
+该规则检查规则和 at 规则的实际嵌套深度与你指定的最大值。以下展示嵌套深度是如何工作的：
 
 ```css
 a {
@@ -25,6 +29,8 @@ a {
 ```
 
 Note that **root-level at-rules will *not* be included in the nesting depth calculation**, because most users would take for granted that root-level at-rules are "free" (because necessary). So both of the following `.foo` rules have a nesting depth of 2, and will therefore pass if your `max` is less than or equal to 2:
+
+注意，**根级别的 at 规则将 *不会*被算进嵌套深度里**，因为大多数用户会理所当然地认为根级别的 at 规则是必须的。因此，下面的 `.foo` 规则嵌套深度都为 `2`，如果你的 `max` 小于等于 2，将通过规则。
 
 ```css
 a {
@@ -48,9 +54,15 @@ This rule integrates into stylelint's core the functionality of the (now depreca
 
 `int`: Maximum nesting depth allowed.
 
+`int`：所允许的最大嵌套深度。
+
 For example, with `2`:
 
+例如，最大嵌套深度为 `2`：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -73,6 +85,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -102,9 +116,15 @@ Ignore at-rules that only wrap other rules, and do not themselves have declarati
 
 For example, with `1`:
 
+例如，最大嵌套深度为 `1`：
+
 The following patterns are considered warnings:
 
+以下模式被认为是个警告：
+
 As the at-rules have a declarations blocks.
+
+因为 at 规则有一个声明块。
 
 ```css
 a {
@@ -123,6 +143,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 As all of the following `.foo` rules would have a nesting depth of just 1.
 
@@ -152,13 +174,39 @@ a {
 
 Ignore the specified at-rules.
 
+忽略指定的 at 规则。
+
 For example, with `1` and given:
+
+例如，最大嵌套深度为 `1`，给出：
 
 ```js
 ["/^my-/", "media"]
 ```
 
+The following patterns are considered warnings:
+
+以下模式被认为是个警告：
+
+```css
+a {
+  @import print {       /* 1 */
+    b { top: 0; }       /* 2 */
+  }
+}
+```
+
+```css
+a {
+  @not-my-at-rule print {   /* 1 */
+    b { top: 0; }       /* 2 */
+  }
+}
+```
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -196,24 +244,6 @@ a {
     b {                      /* 2 */
       c { top: 0; }          /* 3 */
     }
-  }
-}
-```
-
-The following patterns are considered warnings:
-
-```css
-a {
-  @import print {       /* 1 */
-    b { top: 0; }       /* 2 */
-  }
-}
-```
-
-```css
-a {
-  @not-my-at-rule print {   /* 1 */
-    b { top: 0; }       /* 2 */
   }
 }
 ```

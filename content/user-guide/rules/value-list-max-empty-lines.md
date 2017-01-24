@@ -2,6 +2,8 @@
 
 Limit the number of adjacent empty lines within value lists.
 
+限制值列表中相邻空行数量。
+
 ```css
 a {
   box-shadow:
@@ -17,9 +19,15 @@ a {
 
 `int`: Maximum number of empty lines.
 
+`int`：最大空行数。
+
 For example, with `0`:
 
+比如， `0`：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -60,6 +68,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

@@ -2,6 +2,8 @@
 
 Require a reason comment before or after `stylelint-disable` comments.
 
+要求在 `stylelint-disable` 注释之前或之后有一个原因的描述注释。
+
 ```css
 a {
   /* stylelint-disable no-browser-hacks */
@@ -15,13 +17,19 @@ a {
 
 ## Options
 
-`string`: `"always-before"|"always-after"`
+```js
+string: "always-before"|"always-after"
+```
 
 ### `"always-before"`
 
 There *must always* be a reason comment before the `stylelint-disable` comment.
 
+在 `stylelint-disable` 注释之前必须有一个原因的描述注释。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -51,6 +59,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -82,7 +92,11 @@ a {
 
 There *must always* be a reason comment after the `stylelint-disable` disable comment.
 
+在 `stylelint-disable` 注释之后必须有一个原因的描述注释。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -112,6 +126,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

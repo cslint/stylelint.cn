@@ -2,6 +2,8 @@
 
 Disallow standard properties inside `:root` rules.
 
+禁止在 `:root` 中出现标准属性。
+
 ```css
     :root { color: #333 }
 /** ↑       ↑
@@ -10,11 +12,15 @@ Disallow standard properties inside `:root` rules.
 
 This rule ignores `$sass` and `@less` variables.
 
+该规则忽略 `$sass` 和 `@less` 变量。
+
 ## Options
 
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 :root { color: pink; }
@@ -25,6 +31,8 @@ a, :root { top: 0; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 :root { --foo: 0; }

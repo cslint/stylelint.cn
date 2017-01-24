@@ -70,6 +70,11 @@
     color: color(black a(87%));
     font-size: 1em;
     line-height: 1.5;
+    
+    &:nth-of-type(2n+1) {
+      /*color: color(black a(20%));*/
+      opacity: .2;
+    }
   }
 
   & blockquote {

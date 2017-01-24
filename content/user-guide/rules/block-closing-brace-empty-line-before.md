@@ -2,6 +2,8 @@
 
 Require or disallow an empty line before the closing brace of blocks.
 
+要求或禁止在闭括号之前有空行。
+
 ```css
 a {
   color: pink;
@@ -13,11 +15,15 @@ a {
 
 ## Options
 
-`string`: `"always-multi-line"|"never"`
+```js
+string: "always-multi-line"|"never"
+```
 
 ### `always-multi-line`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -26,6 +32,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -42,6 +50,8 @@ a { color: pink; }
 
 The following patterns are considered warnings:
 
+以下模式被认为是个警告：
+
 ```css
 a {
   color: pink;
@@ -50,6 +60,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

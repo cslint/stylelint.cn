@@ -2,6 +2,8 @@
 
 Disallow extra semicolons.
 
+禁止多余的分号。
+
 ```css
 a { color: pink;; }
 /**             ↑
@@ -10,11 +12,15 @@ a { color: pink;; }
 
 This rule ignores semicolons after Less mixins.
 
+该规则忽略 Less mixins 之后的分号。
+
 ## Options
 
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @import "x.css";;
@@ -55,6 +61,8 @@ b {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @import "x.css";

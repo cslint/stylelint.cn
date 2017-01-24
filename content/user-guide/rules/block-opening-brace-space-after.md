@@ -2,6 +2,8 @@
 
 Require a single space or disallow whitespace after the opening brace of blocks.
 
+在开括号之后要求有一个空格或禁止有空格。
+
 ```css
   a { color: pink; }
 /** ↑
@@ -10,13 +12,19 @@ Require a single space or disallow whitespace after the opening brace of blocks.
 
 ## Options
 
-`string`: `"always"|"never"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line"`
+```js
+string: "always"|"never"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line"
+```
 
 ### `"always"`
 
 There *must always* be a single space after the opening brace.
 
+在开括号之后必须有一个空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {color: pink; }
@@ -28,6 +36,8 @@ color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink; }
@@ -42,7 +52,11 @@ a { color: pink;
 
 There *must never* be whitespace after the opening brace.
 
+在开括号之后禁止有空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: pink; }
@@ -54,6 +68,8 @@ color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {color: pink; }
@@ -68,13 +84,19 @@ a
 
 There *must always* be a single space after the opening brace in single-line blocks.
 
+在单行块的开括号之后必须有一个空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink; }
@@ -89,13 +111,19 @@ a {color: pink;
 
 There *must never* be whitespace after the opening brace in single-line blocks.
 
+在单行块的开括号之后禁止有空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: pink; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {color: pink; }
@@ -110,7 +138,11 @@ a { color: pink;
 
 There *must always* be a single space after the opening brace in multi-line blocks.
 
+在多行块的开括号之后必须有一个空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {color: pink;
@@ -118,6 +150,8 @@ a {color: pink;
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {color: pink; }
@@ -132,7 +166,11 @@ a { color: pink;
 
 There *must never* be whitespace after the opening brace in multi-line blocks.
 
+在多行块的开括号之后禁止有空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: pink;
@@ -140,6 +178,8 @@ a { color: pink;
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink; }

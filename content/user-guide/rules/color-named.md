@@ -2,6 +2,8 @@
 
 Require (where possible) or disallow named colors.
 
+要求 (可能的情况下) 或 禁止使用命名的颜色。
+
 ```css
 a { color: black }
 /**        ↑
@@ -10,15 +12,23 @@ a { color: black }
 
 ## Options
 
-`string`: `"always-where-possible"|"never"`
+```js
+string: "always-where-possible"|"never"
+```
 
 ### `"always-where-possible"`
 
 Colors *must always*, where possible, be named.
 
+在可能的情况下，**必须** 使用命名的颜色。
+
 This will warn if a hex (3, 4, 6 and 8 digit), `rgb()`, `rgba()`, `hsl()`, `hsla()`, `hwb()` or `gray()` color can be represented as a named color.
 
+如果一个十六进制（3位、4位、6位和8位）`rgb()`，`rgba()`，`hsl()`，`hsla()`，`hwb()` 或 `gray()` 颜色可以表示为一个命名的颜色，却不使用命名的颜色，该规则将发出警告。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: #000; }
@@ -58,6 +68,8 @@ a { color: gray(0); }
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a { color: black; }
 ```
@@ -74,7 +86,11 @@ a { color: rgb(0, 0, 0, 0.5); }
 
 Colors *must never* be named.
 
+**禁止** 使用命名的颜色。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { color: black; }
@@ -85,6 +101,8 @@ a { color: white; }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: #000; }
@@ -112,9 +130,15 @@ a { color: @blue; }
 
 Ignore colors that are inside a function.
 
+忽略在函数内部的颜色。
+
 For example, with `"never"`.
 
+例如，在 `"never"` 情况下。
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -132,13 +156,19 @@ a {
 
 For example with `"never"`.
 
+例如，在 `"never"` 情况下。
+
 Given:
+
+给出：
 
 ```js
 ["/^my-/", "composes"]
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

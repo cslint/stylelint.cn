@@ -2,6 +2,8 @@
 
 Require or disallow an empty line before nested rules.
 
+在嵌套的规则之前要求或禁止有空行。
+
 ```css
 @media {
        /* ← */
@@ -13,13 +15,19 @@ Require or disallow an empty line before nested rules.
 
 ## Options
 
-`string`: `"always"|"never"|"always-multi-line"|"never-multi-line"`
+```js
+string: "always"|"never"|"always-multi-line"|"never-multi-line"
+```
 
 ### `"always"`
 
 There *must always* be an empty line before rules.
 
+在规则之前必须有一行空行。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @media { a {} }
@@ -32,6 +40,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @media {
@@ -44,7 +54,11 @@ The following patterns are *not* considered warnings:
 
 There *must never* be an empty line before rules.
 
+在规则之前禁止有空行。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @media { a {} }
@@ -59,6 +73,8 @@ The following patterns are considered warnings:
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 @media {
   a {}
@@ -69,7 +85,11 @@ The following patterns are *not* considered warnings:
 
 There *must always* be an empty line before multi-line rules.
 
+在多行规则之前必须有一行空行。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @media {
@@ -81,6 +101,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @media {
@@ -96,7 +118,11 @@ The following patterns are *not* considered warnings:
 
 There *must never* be an empty line before multi-line rules.
 
+在多行规则之前禁止有空行。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @media {
@@ -109,6 +135,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @media {
@@ -125,9 +153,15 @@ The following patterns are *not* considered warnings:
 
 Reverse the primary option if the rule is the first in a block.
 
+如果某条规则是块中第一个节点，颠倒主选项功能。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @media {
@@ -141,6 +175,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @media {
@@ -156,9 +192,15 @@ The following patterns are *not* considered warnings:
 
 Reverse the primary option if the rule comes after another rule.
 
+如果某条规则是另一个规则之后，颠倒主选项功能。
+
 For example, with `"always"`:
 
+例如，在 `"always"` 选项下：
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @media {
@@ -170,6 +212,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @media {
@@ -185,7 +229,11 @@ The following patterns are *not* considered warnings:
 
 Ignore rules that come after a comment.
 
+该规则忽略注释之后的块。
+
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @media {

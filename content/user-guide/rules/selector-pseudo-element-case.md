@@ -2,6 +2,8 @@
 
 Specify lowercase or uppercase for pseudo-element selectors.
 
+指定伪元素的大小写。
+
 ```css
     a::before {}
 /**    ↑
@@ -10,11 +12,15 @@ Specify lowercase or uppercase for pseudo-element selectors.
 
 ## Options
 
-`string`: `"lower"|"upper"`
+```js
+string: "lower"|"upper"
+```
 
 ### `"lower"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a:Before {}
@@ -46,6 +52,8 @@ input::-MOZ-PLACEHOLDER {}
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a:before {}
 ```
@@ -61,6 +69,8 @@ input::-moz-placeholder {}
 ### `"upper"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a:Before {}
@@ -91,6 +101,8 @@ input::-moz-placeholder {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a:BEFORE {}

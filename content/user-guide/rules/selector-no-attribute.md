@@ -2,6 +2,8 @@
 
 Disallow attribute selectors.
 
+禁用特性选择器。
+
 ```css
     [rel="external"] {}
 /** ↑
@@ -13,6 +15,8 @@ Disallow attribute selectors.
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 [foo] {}
@@ -32,6 +36,8 @@ a > [foo] {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {}

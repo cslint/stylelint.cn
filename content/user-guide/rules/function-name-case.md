@@ -2,6 +2,8 @@
 
 Specify lowercase or uppercase for function names.
 
+指定函数名称的大小写。
+
 ```css
 a { width: calc(5% - 10em); }
 /**        ↑
@@ -10,13 +12,19 @@ a { width: calc(5% - 10em); }
 
 Camel case function names, e.g. `translateX`, are accounted for when the `lower` option is used.
 
+当使用 `lower` 选项时，函数名称使用驼峰式大小写，如 `translateX`。
+
 ## Options
 
-`string`: `"lower"|"upper"`
+```js
+string: "lower"|"upper"
+```
 
 ### `"lower"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a {
@@ -44,6 +52,8 @@ a {
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a {
   width: calc(5% - 10em);
@@ -59,6 +69,8 @@ a {
 ### `"upper"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是警告：
 
 ```css
 a {
@@ -85,6 +97,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {
@@ -104,15 +118,23 @@ a {
 
 Ignore case of function names.
 
+忽略函数名称的大小写。
+
 For example, with `"lower"`.
 
+比如，在 `"lower"` 选项下。
+
 Given:
+
+给出：
 
 ```js
 ["SOME-FUNCTION", "/^get.*$/"]
 ```
 
 The following patterns are considered warnings:
+
+以下模式被认为是警告：
 
 ```css
 a {
@@ -140,6 +162,8 @@ a {
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a {
   display: some-function();
@@ -166,13 +190,19 @@ a {
 
 For example, with `"upper"`.
 
+比如，在 `"upper"` 选项下。
+
 Given:
+
+给出：
 
 ```js
 ["some-function", "/^get.*$/"]
 ```
 
 The following patterns are considered warnings:
+
+以下模式被认为是警告：
 
 ```css
 a {
@@ -199,6 +229,8 @@ a {
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a {

@@ -2,6 +2,8 @@
 
 Disallow `!important` within keyframe declarations.
 
+禁止在 keyframe 声明中使用 `!important`。
+
 ```css
 @keyframes important2 {
   from { margin: 10px }
@@ -16,6 +18,8 @@ Disallow `!important` within keyframe declarations.
 ### `true`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @keyframes important1 {
@@ -51,6 +55,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { color: pink !important; }

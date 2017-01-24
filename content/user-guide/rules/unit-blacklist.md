@@ -2,6 +2,8 @@
 
 Specify a blacklist of disallowed units.
 
+指定一个禁止使用的单位的黑名单。
+
 ```css
 a { width: 100px; }
 /**           ↑
@@ -10,15 +12,21 @@ a { width: 100px; }
 
 ## Options
 
-`array|string`: `["array", "of", "units"]|"unit"`
+```js
+array|string: ["array", "of", "units"]|"unit"
+```
 
 Given:
+
+给出：
 
 ```js
 ["px", "em", "deg"]
 ```
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { width: 100px; }
@@ -33,6 +41,8 @@ a { transform: rotate(30deg); }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { font-size: 1.2rem; }
@@ -56,9 +66,15 @@ a { animation: animation-name 5s ease; }
 
 Ignore units in the values of declarations with the specified properties.
 
+忽略指定的属性中的单位。
+
 For example, with `["px", "vmin"]`.
 
+例如，`["px", "vmin"]`。
+
 Given:
+
+给出：
 
 ```js
 {
@@ -66,22 +82,9 @@ Given:
   "vmin": [ "width" ]  
 }
 ```
-
-The following patterns are *not* considered warnings:
-
-```css
-a { font-size: 13px; }
-```
-
-```css
-a { border-bottom-width: 6px; }
-```
-
-```css
-a { width: 100vmin; }
-```
-
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { line-height: 12px; }
@@ -93,4 +96,20 @@ a { -moz-border-radius-topright: 40px; }
 
 ```css
 a { height: 100vmin; }
+```
+
+The following patterns are *not* considered warnings:
+
+以下模式正常：
+
+```css
+a { font-size: 13px; }
+```
+
+```css
+a { border-bottom-width: 6px; }
+```
+
+```css
+a { width: 100vmin; }
 ```

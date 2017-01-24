@@ -2,6 +2,8 @@
 
 Require or disallow quotes for urls.
 
+要求或禁止 url 使用引号。
+
 ```css
 a { background: url("x.jpg") }
 /**                 ↑     ↑
@@ -10,13 +12,19 @@ a { background: url("x.jpg") }
 
 ## Options
 
-`string`: `"always"|"never"`
+```js
+string: "always"|"never"
+```
 
 ### `"always"`
 
 Urls *must always* be quoted.
 
+url 必须使用引号。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 @import url(foo.css);
@@ -35,6 +43,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { background: url('x.jpg'); }
@@ -60,7 +70,11 @@ a { background: url('x.jpg'); }
 
 Urls *must never* be quoted.
 
+url 禁止使用引号。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a { background: url('x.jpg'); }
@@ -75,6 +89,8 @@ a { background: url('x.jpg'); }
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a { background: url(x.jpg); }
@@ -94,9 +110,15 @@ a { background: url(x.jpg); }
 
 Reverse the primary option if the function has no arguments.
 
+如果 url 中没有参数时，颠倒主选项的功能。
+
 For example, with `"always"`.
 
+比如，在 `"always"` 选项下：
+
 The following pattern is *not* considered warnings:
+
+以下模式正常：
 
 ```css
 @-moz-document url-prefix() {}

@@ -2,6 +2,8 @@
 
 Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
 
+在特性(attribute) 选择器的方括号内要求有空格或禁止有空格。
+
 ```css
     [ target=_blank ]
 /** ↑               ↑
@@ -10,13 +12,19 @@ Require a single space or disallow whitespace on the inside of the brackets with
 
 ## Options
 
-`string`: `"always"|"never"`
+```js
+string: "always"|"never"
+```
 
 ### `"always"`
 
 There *must always* be a single space inside the brackets.
 
+在方括号内必须有空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 [target] {}
@@ -44,6 +52,8 @@ The following patterns are considered warnings:
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 [ target ] {}
 ```
@@ -56,7 +66,11 @@ The following patterns are *not* considered warnings:
 
 There *must never* be whitespace on the inside the brackets.
 
+在方括号内禁止有空格。
+
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 [ target] {}
@@ -83,6 +97,8 @@ The following patterns are considered warnings:
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 [target] {}

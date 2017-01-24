@@ -2,6 +2,8 @@
 
 Specify lowercase or uppercase for pseudo-class selectors.
 
+指定伪类选择器的大小写。
+
 ```css
     a:hover {}
 /**   ↑
@@ -10,11 +12,15 @@ Specify lowercase or uppercase for pseudo-class selectors.
 
 ## Options
 
-`string`: `"lower"|"upper"`
+```js
+string: "lower"|"upper"
+```
 
 ### `"lower"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a:Hover {}
@@ -38,6 +44,8 @@ a:HOVER {}
 
 The following patterns are *not* considered warnings:
 
+以下模式正常：
+
 ```css
 a:hover {}
 ```
@@ -53,6 +61,8 @@ a:hover {}
 ### `"upper"`
 
 The following patterns are considered warnings:
+
+以下模式被认为是个警告：
 
 ```css
 a:Hover {}
@@ -75,6 +85,8 @@ a:hover {}
 ```
 
 The following patterns are *not* considered warnings:
+
+以下模式正常：
 
 ```css
 a:HOVER {}
