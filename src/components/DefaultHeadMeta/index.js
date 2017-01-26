@@ -21,6 +21,8 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         },
       ] }
       meta={ [
+        { property: "keywords", content: pkg.keywords },
+        { property: "description", content: pkg.description },
         {
           name: "generator", content: `${
           process.env.PHENOMIC_NAME } ${ process.env.PHENOMIC_VERSION }`,

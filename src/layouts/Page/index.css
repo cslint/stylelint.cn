@@ -78,11 +78,11 @@
   }
 
   & a {
-    color: crimson;
+    color: #4B32C3;
     text-decoration: none;
 
     &:hover {
-      color: limegreen;
+      color: #4B32C3;
     }
   }
 
