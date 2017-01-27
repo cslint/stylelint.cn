@@ -1,3 +1,6 @@
+---
+layout: RuleLayout
+---
 # Rules
 
 Rules determine what the linter looks for and complains about. All the rules are turned off by default and none have default values for their options. The rules follow a consistent naming convention and have been designed to work in conjunction with one another, you can read more about this in the ["About rules"](about-rules.md) section.
@@ -8,6 +11,10 @@ In addition to these rules there are [plugins](plugins.md), which are rules buil
 
 除了这些规则，还有[插件](plugins.md)，它们是社区支持的方法、工具集，非标准的 CSS 特性，或特定的用例。查看[插件](plugins.md)了解更多。
 
+Rules which have a wrench (fix) below can be autofixed by using [stylefmt](https://github.com/morishitter/stylefmt).
+
+在下文中带有(fix)的图标的规则可以使用 [stylefmt](https://github.com/morishitter/stylefmt) 进行自动修复。
+
 ## List of rules
 
 Here are all the rules within stylelint, grouped by the [*thing*](http://apps.workflower.fi/vocabs/css/en) they apply to.
@@ -16,10 +23,10 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 ### Color
 
--   [`color-hex-case`](color-hex-case/README.md): Specify lowercase or uppercase for hex colors.
--   [`color-hex-case`](color-hex-case/README.md): 指定十六进制颜色大小写。
--   [`color-hex-length`](color-hex-length/README.md): Specify short or long notation for hex colors.
--   [`color-hex-length`](color-hex-length/README.md): 指定十六进制颜色是否使用缩写。
+-   [`color-hex-case`](color-hex-case/README.md): Specify lowercase or uppercase for hex colors (fixable).
+-   [`color-hex-case`](color-hex-case/README.md): 指定十六进制颜色大小写 (fixable)。
+-   [`color-hex-length`](color-hex-length/README.md): Specify short or long notation for hex colors (fixable).
+-   [`color-hex-length`](color-hex-length/README.md): 指定十六进制颜色是否使用缩写 (fixable)。
 -   [`color-named`](color-named/README.md): Require (where possible) or disallow named colors.
 -   [`color-named`](color-named/README.md): 要求 (可能的情况下) 或 禁止使用命名的颜色。
 -   [`color-no-hex`](color-no-hex/README.md): Disallow hex colors.
@@ -78,24 +85,24 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 ### Number
 
--   [`number-leading-zero`](number-leading-zero/README.md): Require or disallow a leading zero for fractional numbers less than 1.
--   [`number-leading-zero`](number-leading-zero/README.md)：要求或禁止小于 1 的小数的前导 0。
+-   [`number-leading-zero`](number-leading-zero/README.md): Require or disallow a leading zero for fractional numbers less than 1 (fixable).
+-   [`number-leading-zero`](number-leading-zero/README.md)：要求或禁止小于 1 的小数的前导 0 (fixable)。
 -   [`number-max-precision`](number-max-precision/README.md): Limit the number of decimal places allowed in numbers.
 -   [`number-max-precision`](number-max-precision/README.md)：限制小数位数。
--   [`number-no-trailing-zeros`](number-no-trailing-zeros/README.md): Disallow trailing zeros in numbers.
--   [`number-no-trailing-zeros`](number-no-trailing-zeros/README.md)：禁止数字中的拖尾 0。
+-   [`number-no-trailing-zeros`](number-no-trailing-zeros/README.md): Disallow trailing zeros in numbers (fixable).
+-   [`number-no-trailing-zeros`](number-no-trailing-zeros/README.md)：禁止数字中的拖尾 0 (fixable)。
 
 ### String
 
 -   [`string-no-newline`](string-no-newline/README.md): Disallow (unescaped) newlines in strings.
 -   [`string-no-newline`](string-no-newline/README.md)：禁止在字符串中使用（非转义的）换行符。
--   [`string-quotes`](string-quotes/README.md): Specify single or double quotes around strings.
--   [`string-quotes`](string-quotes/README.md)：指定字符串使用单引号还是双引号。
+-   [`string-quotes`](string-quotes/README.md): Specify single or double quotes around strings (fixable).
+-   [`string-quotes`](string-quotes/README.md)：指定字符串使用单引号还是双引号 (fixable)。
 
 ### Length
 
--   [`length-zero-no-unit`](length-zero-no-unit/README.md): Disallow units for zero lengths.
--   [`length-zero-no-unit`](length-zero-no-unit/README.md): 长度为0时，禁止使用单位。
+-   [`length-zero-no-unit`](length-zero-no-unit/README.md): Disallow units for zero lengths (fixable).
+-   [`length-zero-no-unit`](length-zero-no-unit/README.md): 长度为0时，禁止使用单位 (fixable)。
 
 ### Time
 
@@ -144,8 +151,8 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 ### Shorthand property
 
--   [`shorthand-property-no-redundant-values`](shorthand-property-no-redundant-values/README.md): Disallow redundant values in shorthand properties.
--   [`shorthand-property-no-redundant-values`](shorthand-property-no-redundant-values/README.md)：禁止在简写属性中使用冗余值。
+-   [`shorthand-property-no-redundant-values`](shorthand-property-no-redundant-values/README.md): Disallow redundant values in shorthand properties (fixable).
+-   [`shorthand-property-no-redundant-values`](shorthand-property-no-redundant-values/README.md)：禁止在简写属性中使用冗余值 (fixable)。
 
 ### Property
 
@@ -173,10 +180,10 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`declaration-bang-space-before`](declaration-bang-space-before/README.md)：在感叹号之前要求有一个空格或禁止有空格。
 -   [`declaration-colon-newline-after`](declaration-colon-newline-after/README.md): Require a newline or disallow whitespace after the colon of declarations.
 -   [`declaration-colon-newline-after`](declaration-colon-newline-after/README.md)：在冒号之后要求有一个换行符或禁止有空格。
--   [`declaration-colon-space-after`](declaration-colon-space-after/README.md): Require a single space or disallow whitespace after the colon of declarations.
--   [`declaration-colon-space-after`](declaration-colon-space-after/README.md)：在冒号之后要求有一个空格或禁止有空格。
--   [`declaration-colon-space-before`](declaration-colon-space-before/README.md): Require a single space or disallow whitespace before the colon of declarations.
--   [`declaration-colon-space-before`](declaration-colon-space-before/README.md)：在冒号之前要求有一个空格或禁止有空格。
+-   [`declaration-colon-space-after`](declaration-colon-space-after/README.md): Require a single space or disallow whitespace after the colon of declarations (fixable).
+-   [`declaration-colon-space-after`](declaration-colon-space-after/README.md)：在冒号之后要求有一个空格或禁止有空格 (fixable)。
+-   [`declaration-colon-space-before`](declaration-colon-space-before/README.md): Require a single space or disallow whitespace before the colon of declarations (fixable).
+-   [`declaration-colon-space-before`](declaration-colon-space-before/README.md)：在冒号之前要求有一个空格或禁止有空格 (fixable)。
 -   [`declaration-empty-line-before`](declaration-empty-line-before/README.md): Require or disallow an empty line before declarations.
 -   [`declaration-empty-line-before`](declaration-empty-line-before/README.md)：要求或禁止在声明语句之前有空行。
 -   [`declaration-no-important`](declaration-no-important/README.md): Disallow `!important` within declarations.
@@ -200,8 +207,8 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`declaration-block-no-redundant-longhand-properties`](declaration-block-no-redundant-longhand-properties/README.md)：禁止使用可以缩写却不缩写的属性。
 -   [`declaration-block-no-shorthand-property-overrides`](declaration-block-no-shorthand-property-overrides/README.md): Disallow shorthand properties that override related longhand properties within declaration blocks.
 -   [`declaration-block-no-shorthand-property-overrides`](declaration-block-no-shorthand-property-overrides/README.md)：禁止缩写属性覆盖相关普通写法属性。
--   [`declaration-block-properties-order`](declaration-block-properties-order/README.md): Specify the order of properties within declaration blocks.
--   [`declaration-block-properties-order`](declaration-block-properties-order/README.md)：指定声明块中的属性顺序。**待调整**
+-   [`declaration-block-properties-order`](declaration-block-properties-order/README.md): Specify the order of properties within declaration blocks (fixable).
+-   [`declaration-block-properties-order`](declaration-block-properties-order/README.md)：指定声明块中的属性顺序 (fixable)。**待调整**
 -   [`declaration-block-semicolon-newline-after`](declaration-block-semicolon-newline-after/README.md): Require a newline or disallow whitespace after the semicolons of declaration blocks.
 -   [`declaration-block-semicolon-newline-after`](declaration-block-semicolon-newline-after/README.md)：在声明块的分号之后要求有一个换行符或禁止有空格。
 -   [`declaration-block-semicolon-newline-before`](declaration-block-semicolon-newline-before/README.md): Require a newline or disallow whitespace before the semicolons of declaration blocks.
@@ -219,10 +226,10 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 -   [`block-closing-brace-empty-line-before`](block-closing-brace-empty-line-before/README.md): Require or disallow an empty line before the closing brace of blocks.
 -   [`block-closing-brace-empty-line-before`](block-closing-brace-empty-line-before/README.md)：要求或禁止在闭括号之前有空行。
--   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md): Require a newline or disallow whitespace after the closing brace of blocks.
--   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md)：在闭括号之后要求有一个换行符或禁止有空格。
--   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md): Require a newline or disallow whitespace before the closing brace of blocks.
--   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md)：在闭括号之前要求有一个换行符或禁止有空格。
+-   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md): Require a newline or disallow whitespace after the closing brace of blocks (fixable).
+-   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md)：在闭括号之后要求有一个换行符或禁止有空格 (fixable)。
+-   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md): Require a newline or disallow whitespace before the closing brace of blocks (fixable).
+-   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md)：在闭括号之前要求有一个换行符或禁止有空格 (fixable)。
 -   [`block-closing-brace-space-after`](block-closing-brace-space-after/README.md): Require a single space or disallow whitespace after the closing brace of blocks.
 -   [`block-closing-brace-space-after`](block-closing-brace-space-after/README.md)：在闭括号之后要求有一个空格或禁止有空格。
 -   [`block-closing-brace-space-before`](block-closing-brace-space-before/README.md): Require a single space or disallow whitespace before the closing brace of blocks.
@@ -231,14 +238,14 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`block-no-empty`](block-no-empty/README.md)：禁止出现空块。
 -   [`block-no-single-line`](block-no-single-line/README.md): Disallow single-line blocks.
 -   [`block-no-single-line`](block-no-single-line/README.md)：禁止出现单行块。
--   [`block-opening-brace-newline-after`](block-opening-brace-newline-after/README.md): Require a newline after the opening brace of blocks.
--   [`block-opening-brace-newline-after`](block-opening-brace-newline-after/README.md)：在开括号之后要求有一个换行符。
--   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md): Require a newline or disallow whitespace before the opening brace of blocks.
--   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md)：在括开号之前要求有一个换行符或禁止有空格。
--   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md): Require a single space or disallow whitespace after the opening brace of blocks.
--   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md)：在开括号之后要求有一个空格或禁止有空格。
--   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md): Require a single space or disallow whitespace before the opening brace of blocks.
--   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md)：在开括号之前要求有一个空格或禁止有空格。
+-   [`block-opening-brace-newline-after`](block-opening-brace-newline-after/README.md): Require a newline after the opening brace of blocks (fixable).
+-   [`block-opening-brace-newline-after`](block-opening-brace-newline-after/README.md)：在开括号之后要求有一个换行符 (fixable)。
+-   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md): Require a newline or disallow whitespace before the opening brace of blocks (fixable).
+-   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md)：在括开号之前要求有一个换行符或禁止有空格 (fixable)。
+-   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md): Require a single space or disallow whitespace after the opening brace of blocks (fixable).
+-   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md)：在开括号之后要求有一个空格或禁止有空格 (fixable)。
+-   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md): Require a single space or disallow whitespace before the opening brace of blocks (fixable).
+-   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md)：在开括号之前要求有一个空格或禁止有空格 (fixable)。
 
 ### Selector
 
@@ -256,10 +263,10 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`selector-attribute-quotes`](selector-attribute-quotes/README.md)：要求或禁止特性值使用引号。
 -   [`selector-class-pattern`](selector-class-pattern/README.md): Specify a pattern for class selectors.
 -   [`selector-class-pattern`](selector-class-pattern/README.md)：为类选择器指定一个匹配模式。
--   [`selector-combinator-space-after`](selector-combinator-space-after/README.md): Require a single space or disallow whitespace after the combinators of selectors.
--   [`selector-combinator-space-after`](selector-combinator-space-after/README.md)：在关系选择符之后要求有一个空格或禁止有空格。
--   [`selector-combinator-space-before`](selector-combinator-space-before/README.md): Require a single space or disallow whitespace before the combinators of selectors.
--   [`selector-combinator-space-before`](selector-combinator-space-before/README.md)：在关系选择符之前要求有一个空格或禁止有空格。
+-   [`selector-combinator-space-after`](selector-combinator-space-after/README.md): Require a single space or disallow whitespace after the combinators of selectors (fixable).
+-   [`selector-combinator-space-after`](selector-combinator-space-after/README.md)：在关系选择符之后要求有一个空格或禁止有空格 (fixable)。
+-   [`selector-combinator-space-before`](selector-combinator-space-before/README.md): Require a single space or disallow whitespace before the combinators of selectors (fixable).
+-   [`selector-combinator-space-before`](selector-combinator-space-before/README.md)：在关系选择符之前要求有一个空格或禁止有空格 (fixable)。
 -   [`selector-descendant-combinator-no-non-space`](selector-descendant-combinator-no-non-space/README.md): Disallow non-space characters for descendant combinators of selectors.
 -   [`selector-descendant-combinator-no-non-space`](selector-descendant-combinator-no-non-space/README.md)：禁止包含选择符出现非空格字符。
 -   [`selector-id-pattern`](selector-id-pattern/README.md): Specify a pattern for id selectors.
@@ -313,14 +320,14 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 ### Selector list
 
--   [`selector-list-comma-newline-after`](selector-list-comma-newline-after/README.md): Require a newline or disallow whitespace after the commas of selector lists.
--   [`selector-list-comma-newline-after`](selector-list-comma-newline-after/README.md): 要求选择器列表的逗号之后有一个换行符或禁止在逗号之后有空白。
--   [`selector-list-comma-newline-before`](selector-list-comma-newline-before/README.md): Require a newline or disallow whitespace before the commas of selector lists.
--   [`selector-list-comma-newline-before`](selector-list-comma-newline-before/README.md): 要求选择器列表的逗号之前有一个换行符或禁止在逗号之前有空白。
--   [`selector-list-comma-space-after`](selector-list-comma-space-after/README.md): Require a single space or disallow whitespace after the commas of selector lists.
--   [`selector-list-comma-space-after`](selector-list-comma-space-after/README.md)：要求在选择器列表的逗号之后有一个空格，或禁止有空白。
--   [`selector-list-comma-space-before`](selector-list-comma-space-before/README.md): Require a single space or disallow whitespace before the commas of selector lists.
--   [`selector-list-comma-space-before`](selector-list-comma-space-before/README.md)：要求在选择器列表的逗号之前有一个空格，或禁止有空白。
+-   [`selector-list-comma-newline-after`](selector-list-comma-newline-after/README.md): Require a newline or disallow whitespace after the commas of selector lists (fixable).
+-   [`selector-list-comma-newline-after`](selector-list-comma-newline-after/README.md): 要求选择器列表的逗号之后有一个换行符或禁止在逗号之后有空白 (fixable)。
+-   [`selector-list-comma-newline-before`](selector-list-comma-newline-before/README.md): Require a newline or disallow whitespace before the commas of selector lists (fixable).
+-   [`selector-list-comma-newline-before`](selector-list-comma-newline-before/README.md): 要求选择器列表的逗号之前有一个换行符或禁止在逗号之前有空白 (fixable)。
+-   [`selector-list-comma-space-after`](selector-list-comma-space-after/README.md): Require a single space or disallow whitespace after the commas of selector lists (fixable).
+-   [`selector-list-comma-space-after`](selector-list-comma-space-after/README.md)：要求在选择器列表的逗号之后有一个空格，或禁止有空白 (fixable)。
+-   [`selector-list-comma-space-before`](selector-list-comma-space-before/README.md): Require a single space or disallow whitespace before the commas of selector lists (fixable).
+-   [`selector-list-comma-space-before`](selector-list-comma-space-before/README.md)：要求在选择器列表的逗号之前有一个空格，或禁止有空白 (fixable)。
 
 ### Root rule
 
@@ -379,8 +386,8 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 -   [`at-rule-blacklist`](at-rule-blacklist/README.md): Specify a blacklist of disallowed at-rules.
 -   [`at-rule-blacklist`](at-rule-blacklist/README.md)：指定一个禁止使用的 at 规则的黑名单。
--   [`at-rule-empty-line-before`](at-rule-empty-line-before/README.md): Require or disallow an empty line before at-rules.
--   [`at-rule-empty-line-before`](at-rule-empty-line-before/README.md)：要求或禁止在 at 规则之前有空行。
+-   [`at-rule-empty-line-before`](at-rule-empty-line-before/README.md): Require or disallow an empty line before at-rules (fixable).
+-   [`at-rule-empty-line-before`](at-rule-empty-line-before/README.md)：要求或禁止在 at 规则之前有空行 (fixable)。
 -   [`at-rule-name-case`](at-rule-name-case/README.md): Specify lowercase or uppercase for at-rules names.
 -   [`at-rule-name-case`](at-rule-name-case/README.md)：指定 at 规则名称的大小写。
 -   [`at-rule-name-newline-after`](at-rule-name-newline-after/README.md): Require a newline after at-rule names.
@@ -391,8 +398,8 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`at-rule-no-unknown`](at-rule-no-unknown/README.md)：禁止使用未知的 at 规则。
 -   [`at-rule-no-vendor-prefix`](at-rule-no-vendor-prefix/README.md): Disallow vendor prefixes for at-rules.
 -   [`at-rule-no-vendor-prefix`](at-rule-no-vendor-prefix/README.md)：禁止 at 规则使用浏览器引擎前缀。
--   [`at-rule-semicolon-newline-after`](at-rule-semicolon-newline-after/README.md): Require a newline after the semicolon of at-rules.
--   [`at-rule-semicolon-newline-after`](at-rule-semicolon-newline-after/README.md)：要求在 at 规则的分号之后有一个换行符。
+-   [`at-rule-semicolon-newline-after`](at-rule-semicolon-newline-after/README.md): Require a newline after the semicolon of at-rules (fixable).
+-   [`at-rule-semicolon-newline-after`](at-rule-semicolon-newline-after/README.md)：要求在 at 规则的分号之后有一个换行符 (fixable)。
 -   [`at-rule-whitelist`](at-rule-whitelist/README.md): Specify a whitelist of allowed at-rules.
 -   [`at-rule-whitelist`](at-rule-whitelist/README.md)：指定一个允许使用的 at 规则的白名单。
 
@@ -414,8 +421,8 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 
 ### General / Sheet
 
--   [`indentation`](indentation/README.md): Specify indentation.
--   [`indentation`](indentation/README.md)：指定缩进。
+-   [`indentation`](indentation/README.md): Specify indentation (fixable).
+-   [`indentation`](indentation/README.md)：指定缩进 (fixable)。
 -   [`max-empty-lines`](max-empty-lines/README.md): Limit the number of adjacent empty lines.
 -   [`max-empty-lines`](max-empty-lines/README.md)：限制相邻空行的数量。
 -   [`max-line-length`](max-line-length/README.md): Limit the length of a line.
