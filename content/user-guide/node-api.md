@@ -93,7 +93,7 @@ A file glob, or array of file globs. Ultimately passed to [node-glob](https://gi
 
 Relative globs are considered relative to `process.cwd()`.
 
-相对的 glob 被认为为是相对于 `process.cwd()`。
+相对的 glob 被认为是相对于 `process.cwd()`。
 
 `node_modules` and `bower_components` are always ignored.
 
@@ -111,7 +111,7 @@ Specify the formatter that you would like to use to format your results.
 
 If you pass a function, it must fit the signature described in the [Developer Guide](../developer-guide/formatters.md).
 
-如果你传到一个函数，它必须符合[开发者指南](../developer-guide/formatters.md)描述的特征。
+如果你传递一个函数，它必须符合[开发者指南](../developer-guide/formatters.md)描述的特征。
 
 ### `ignoreDisables`
 
@@ -169,7 +169,7 @@ An absolute path to a custom [PostCSS-compatible syntax](https://github.com/post
 
 Note, however, that stylelint can provide no guarantee that core rules will work with syntaxes other than the defaults listed for the `syntax` option above.
 
-但是请注意，stylelint 可以提供
+但是请注意，stylelint 不保证核心规则能与自定义的语法正常工作，除非是上面 `syntax` 选项列出的默认语法。
 
 ## The returned promise
 
