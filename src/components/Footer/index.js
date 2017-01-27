@@ -31,6 +31,9 @@ const Footer = () => (
           />
         </a>
       </li>
+      <li className={ styles.item }>
+        <span id='cnzz_stat_icon_1261171879'></span>
+      </li>
     </ul>
   </footer>
 )
