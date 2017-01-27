@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Svg from "react-svg-inline"
 
 import github from './github.svg'
@@ -31,7 +32,18 @@ const Footer = () => (
           />
         </a>
       </li>
+      <li className={ styles.item }>
+        <span id='cnzz_stat_icon_1261171879'></span>
+      </li>
     </ul>
+    <Helmet
+      script={ [{
+        type: "text/javascript",
+        "innerHTML": `{
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261171879%26show%3Dpic'%3E%3C/script%3E"));
+        }`
+      }] }
+    />
   </footer>
 )
 
