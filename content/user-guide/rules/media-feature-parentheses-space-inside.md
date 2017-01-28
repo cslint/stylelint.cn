@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace on the inside of the parentheses within media features.
 
-在media 特性的括号内要求有一个空格或禁止有空格。
+在media 特性的括号内要求有一个空格或禁止有空白。
 
 ```css
 @media ( max-width: 300px ) {}
@@ -46,7 +46,7 @@ The following patterns are *not* considered warnings:
 
 There *must never* be whitespace on the inside the parentheses.
 
-在括号内禁止有空格。
+在括号内禁止有空白。
 
 The following patterns are considered warnings:
 

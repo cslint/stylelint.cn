@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before operators within attribute selectors.
 
-在特性(attribute)选择器的操作符之前要求有一个空格或禁止有空格。
+在特性(attribute)选择器的操作符之前要求有一个空格或禁止有空白。
 
 ```css
 [target =_blank]

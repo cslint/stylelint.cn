@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace after the semicolons of declaration blocks.
 
-在声明块的分号之后要求有一个空格或禁止有空格。
+在声明块的分号之后要求有一个空格或禁止有空白。
 
 ```css
 a { color: pink; top: 0; }
@@ -65,7 +65,7 @@ a { color: pink; top: 0; }
 
 There *must never* be whitespace after the semicolon.
 
-在分号之后禁止有空格。
+在分号之后禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -131,7 +131,7 @@ a {
 
 There *must never* be whitespace after the semicolon in single-line declaration blocks.
 
-在单行声明块中的分号之后禁止有空格。
+在单行声明块中的分号之后禁止有空白。
 
 The following patterns are considered warnings:
 

@@ -12,7 +12,7 @@ a { top: calc(1px + 2px); }
 
 Before the operator, there must be a single whitespace or a newline plus indentation. After the operator, there must be a single whitespace or a newline.
 
-在操作符之前，必须有个空格或换行符加缩进。在操作符之后，必须有个空格或换行符。
+在操作符之前，必须有个空白或换行符加缩进。在操作符之后，必须有个空白或换行符。
 
 ## Options
 

@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
 
-在特性(attribute) 选择器的方括号内要求有空格或禁止有空格。
+在特性(attribute) 选择器的方括号内要求有空格或禁止有空白。
 
 ```css
     [ target=_blank ]
@@ -66,7 +66,7 @@ The following patterns are *not* considered warnings:
 
 There *must never* be whitespace on the inside the brackets.
 
-在方括号内禁止有空格。
+在方括号内禁止有空白。
 
 The following patterns are considered warnings:
 

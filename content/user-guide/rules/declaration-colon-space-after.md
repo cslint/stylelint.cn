@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace after the colon of declarations.
 
-在冒号之后要求有一个空格或禁止有空格。
+在冒号之后要求有一个空格或禁止有空白。
 
 ```css
 a { color: pink }
@@ -50,7 +50,7 @@ a { color: pink }
 
 There *must never* be whitespace after the colon.
 
-在冒号之后禁止有空格。
+在冒号之后禁止有空白。
 
 The following patterns are considered warnings:
 

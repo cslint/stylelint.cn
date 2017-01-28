@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the combinators of selectors.
 
-在关系选择符之前要求有一个空格或禁止有空格。
+在关系选择符之前要求有一个空格或禁止有空白。
 
 ```css
   a > b + c ~ d e { color: pink; }
@@ -62,7 +62,7 @@ a >b { color: pink; }
 
 There *must never* be whitespace before the combinators.
 
-在选择符之前禁止有空格。
+在选择符之前禁止有空白。
 
 The following patterns are considered warnings:
 

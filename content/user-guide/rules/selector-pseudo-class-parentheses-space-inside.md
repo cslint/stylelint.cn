@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
 
-在伪类选择器的括号内要求使用一个空格或禁止使用空格。
+在伪类选择器的括号内要求使用一个空格或禁止有空白。
 
 ```css
 input:not( [type="submit"] ) {}
@@ -46,7 +46,7 @@ input:not( [type="submit"] ) {}
 
 There *must never* be whitespace on the inside the parentheses.
 
-在括号内禁止有空格。
+在括号内禁止有空白。
 
 The following patterns are considered warnings:
 

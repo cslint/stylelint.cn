@@ -2,7 +2,7 @@
 
 Require or disallow whitespace after functions.
 
-要求或禁止在函数之后有空格。
+要求或禁止在函数之后有空白。
 
 ```css
 a { transform: translate(1, 1) scale(3); }
@@ -24,7 +24,7 @@ string: "always"|"never"
 
 There *must always* be whitespace after the function.
 
-在函数之后必须有空格。
+在函数之后必须有空白。
 
 The following patterns are considered warnings:
 
@@ -82,7 +82,7 @@ a {
 
 There *must never* be whitespace after the function.
 
-在函数之后禁止有空格。
+在函数之后禁止有空白。
 
 The following patterns are considered warnings:
 

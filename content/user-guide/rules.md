@@ -53,13 +53,13 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`function-calc-no-unspaced-operator`](function-calc-no-unspaced-operator/README.md): Disallow an unspaced operator within `calc` functions.
 -   [`function-calc-no-unspaced-operator`](function-calc-no-unspaced-operator/README.md)：禁止在 `calc` 函数内使用不加空格的操作符。
 -   [`function-comma-newline-after`](function-comma-newline-after/README.md): Require a newline or disallow whitespace after the commas of functions.
--   [`function-comma-newline-after`](function-comma-newline-after/README.md)：在函数的逗号之后要求有一个换行符或禁止有空格。
+-   [`function-comma-newline-after`](function-comma-newline-after/README.md)：在函数的逗号之后要求有一个换行符或禁止有空白。
 -   [`function-comma-newline-before`](function-comma-newline-before/README.md): Require a newline or disallow whitespace before the commas of functions.
--   [`function-comma-newline-before`](function-comma-newline-before/README.md)：在函数的逗号之前要求有一个换行符或禁止有空格。
+-   [`function-comma-newline-before`](function-comma-newline-before/README.md)：在函数的逗号之前要求有一个换行符或禁止有空白。
 -   [`function-comma-space-after`](function-comma-space-after/README.md): Require a single space or disallow whitespace after the commas of functions.
--   [`function-comma-space-after`](function-comma-space-after/README.md)：在函数的逗号之后要求有一个空格或禁止有空格。
+-   [`function-comma-space-after`](function-comma-space-after/README.md)：在函数的逗号之后要求有一个空格或禁止有空白。
 -   [`function-comma-space-before`](function-comma-space-before/README.md): Require a single space or disallow whitespace before the commas of functions.
--   [`function-comma-space-before`](function-comma-space-before/README.md)：在函数的逗号之前要求有一个空格或禁止有空格。
+-   [`function-comma-space-before`](function-comma-space-before/README.md)：在函数的逗号之前要求有一个空格或禁止有空白。
 -   [`function-linear-gradient-no-nonstandard-direction`](function-linear-gradient-no-nonstandard-direction/README.md): Disallow direction values in `linear-gradient()` calls that are not valid according to the [standard syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient#Syntax).
 -   [`function-linear-gradient-no-nonstandard-direction`](function-linear-gradient-no-nonstandard-direction/README.md)：根据[标准语法](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient#Syntax)，禁止 `linear-gradient()` 中无效的方向值。
 -   [`function-max-empty-lines`](function-max-empty-lines/README.md): Limit the number of adjacent empty lines within functions.
@@ -67,9 +67,9 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`function-name-case`](function-name-case/README.md): Specify lowercase or uppercase for function names.
 -   [`function-name-case`](function-name-case/README.md)：指定函数名称的大小写。
 -   [`function-parentheses-newline-inside`](function-parentheses-newline-inside/README.md): Require a newline or disallow whitespace on the inside of the parentheses of functions.
--   [`function-parentheses-newline-inside`](function-parentheses-newline-inside/README.md)：在函数的括号内要求有一个换行符或禁止有空格。
+-   [`function-parentheses-newline-inside`](function-parentheses-newline-inside/README.md)：在函数的括号内要求有一个换行符或禁止有空白。
 -   [`function-parentheses-space-inside`](function-parentheses-space-inside/README.md): Require a single space or disallow whitespace on the inside of the parentheses of functions.
--   [`function-parentheses-space-inside`](function-parentheses-space-inside/README.md)：在函数的括号内要有一个空格或禁止有空格。
+-   [`function-parentheses-space-inside`](function-parentheses-space-inside/README.md)：在函数的括号内要有一个空格或禁止有空白。
 -   [`function-url-data-uris`](function-url-data-uris/README.md): Require or disallow data URIs for urls.
 -   [`function-url-data-uris`](function-url-data-uris/README.md)：要求或禁止在 url 中使用 data URI。
 -   [`function-url-no-scheme-relative`](function-url-no-scheme-relative/README.md): Disallow scheme-relative urls.
@@ -81,7 +81,7 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`function-whitelist`](function-whitelist/README.md): Specify a whitelist of allowed functions.
 -   [`function-whitelist`](function-whitelist/README.md)：指定一个允许的函数的白名单。
 -   [`function-whitespace-after`](function-whitespace-after/README.md): Require or disallow whitespace after functions.
--   [`function-whitespace-after`](function-whitespace-after/README.md)：要求或禁止在函数之后有空格。
+-   [`function-whitespace-after`](function-whitespace-after/README.md)：要求或禁止在函数之后有空白。
 
 ### Number
 
@@ -130,13 +130,13 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 ### Value list
 
 -   [`value-list-comma-newline-after`](value-list-comma-newline-after/README.md): Require a newline or disallow whitespace after the commas of value lists.
--   [`value-list-comma-newline-after`](value-list-comma-newline-after/README.md)：在值列表的逗号之后要求有一个换行符或禁止有空格。
+-   [`value-list-comma-newline-after`](value-list-comma-newline-after/README.md)：在值列表的逗号之后要求有一个换行符或禁止有空白。
 -   [`value-list-comma-newline-before`](value-list-comma-newline-before/README.md): Require a newline or disallow whitespace before the commas of value lists.
--   [`value-list-comma-newline-before`](value-list-comma-newline-before/README.md)：在值列表的逗号之前要求有一个换行符或禁止有空格。
+-   [`value-list-comma-newline-before`](value-list-comma-newline-before/README.md)：在值列表的逗号之前要求有一个换行符或禁止有空白。
 -   [`value-list-comma-space-after`](value-list-comma-space-after/README.md): Require a single space or disallow whitespace after the commas of value lists.
--   [`value-list-comma-space-after`](value-list-comma-space-after/README.md)：在值列表的逗号之后要求有一个空格或禁止有空格。
+-   [`value-list-comma-space-after`](value-list-comma-space-after/README.md)：在值列表的逗号之后要求有一个空格或禁止有空白。
 -   [`value-list-comma-space-before`](value-list-comma-space-before/README.md): Require a single space or disallow whitespace before the commas of value lists.
--   [`value-list-comma-space-before`](value-list-comma-space-before/README.md)：在值列表的逗号之前要求有一个空格或禁止有空格。
+-   [`value-list-comma-space-before`](value-list-comma-space-before/README.md)：在值列表的逗号之前要求有一个空格或禁止有空白。
 -   [`value-list-max-empty-lines`](value-list-max-empty-lines/README.md): Limit the number of adjacent empty lines within value lists.
 -   [`value-list-max-empty-lines`](value-list-max-empty-lines/README.md)：限制值列表中相邻空行数量。
 
@@ -175,15 +175,15 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 ### Declaration
 
 -   [`declaration-bang-space-after`](declaration-bang-space-after/README.md): Require a single space or disallow whitespace after the bang of declarations.
--   [`declaration-bang-space-after`](declaration-bang-space-after/README.md)：在感叹号之后要求有一个空格或禁止有空格。
+-   [`declaration-bang-space-after`](declaration-bang-space-after/README.md)：在感叹号之后要求有一个空格或禁止有空白。
 -   [`declaration-bang-space-before`](declaration-bang-space-before/README.md): Require a single space or disallow whitespace before the bang of declarations.
--   [`declaration-bang-space-before`](declaration-bang-space-before/README.md)：在感叹号之前要求有一个空格或禁止有空格。
+-   [`declaration-bang-space-before`](declaration-bang-space-before/README.md)：在感叹号之前要求有一个空格或禁止有空白。
 -   [`declaration-colon-newline-after`](declaration-colon-newline-after/README.md): Require a newline or disallow whitespace after the colon of declarations.
--   [`declaration-colon-newline-after`](declaration-colon-newline-after/README.md)：在冒号之后要求有一个换行符或禁止有空格。
+-   [`declaration-colon-newline-after`](declaration-colon-newline-after/README.md)：在冒号之后要求有一个换行符或禁止有空白。
 -   [`declaration-colon-space-after`](declaration-colon-space-after/README.md): Require a single space or disallow whitespace after the colon of declarations (fixable).
--   [`declaration-colon-space-after`](declaration-colon-space-after/README.md)：在冒号之后要求有一个空格或禁止有空格 (fixable)。
+-   [`declaration-colon-space-after`](declaration-colon-space-after/README.md)：在冒号之后要求有一个空格或禁止有空白 (fixable)。
 -   [`declaration-colon-space-before`](declaration-colon-space-before/README.md): Require a single space or disallow whitespace before the colon of declarations (fixable).
--   [`declaration-colon-space-before`](declaration-colon-space-before/README.md)：在冒号之前要求有一个空格或禁止有空格 (fixable)。
+-   [`declaration-colon-space-before`](declaration-colon-space-before/README.md)：在冒号之前要求有一个空格或禁止有空白 (fixable)。
 -   [`declaration-empty-line-before`](declaration-empty-line-before/README.md): Require or disallow an empty line before declarations.
 -   [`declaration-empty-line-before`](declaration-empty-line-before/README.md)：要求或禁止在声明语句之前有空行。
 -   [`declaration-no-important`](declaration-no-important/README.md): Disallow `!important` within declarations.
@@ -210,13 +210,13 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`declaration-block-properties-order`](declaration-block-properties-order/README.md): Specify the order of properties within declaration blocks (fixable).
 -   [`declaration-block-properties-order`](declaration-block-properties-order/README.md)：指定声明块中的属性顺序 (fixable)。**待调整**
 -   [`declaration-block-semicolon-newline-after`](declaration-block-semicolon-newline-after/README.md): Require a newline or disallow whitespace after the semicolons of declaration blocks.
--   [`declaration-block-semicolon-newline-after`](declaration-block-semicolon-newline-after/README.md)：在声明块的分号之后要求有一个换行符或禁止有空格。
+-   [`declaration-block-semicolon-newline-after`](declaration-block-semicolon-newline-after/README.md)：在声明块的分号之后要求有一个换行符或禁止有空白。
 -   [`declaration-block-semicolon-newline-before`](declaration-block-semicolon-newline-before/README.md): Require a newline or disallow whitespace before the semicolons of declaration blocks.
--   [`declaration-block-semicolon-newline-before`](declaration-block-semicolon-newline-before/README.md)：在声明块的分号之前要求有一个换行符或禁止有空格。
+-   [`declaration-block-semicolon-newline-before`](declaration-block-semicolon-newline-before/README.md)：在声明块的分号之前要求有一个换行符或禁止有空白。
 -   [`declaration-block-semicolon-space-after`](declaration-block-semicolon-space-after/README.md): Require a single space or disallow whitespace after the semicolons of declaration blocks.
--   [`declaration-block-semicolon-space-after`](declaration-block-semicolon-space-after/README.md)：在声明块的分号之后要求有一个空格或禁止有空格。
+-   [`declaration-block-semicolon-space-after`](declaration-block-semicolon-space-after/README.md)：在声明块的分号之后要求有一个空格或禁止有空白。
 -   [`declaration-block-semicolon-space-before`](declaration-block-semicolon-space-before/README.md): Require a single space or disallow whitespace before the semicolons of declaration blocks.
--   [`declaration-block-semicolon-space-before`](declaration-block-semicolon-space-before/README.md)：在声明块的分号之后前要求有一个空格或禁止有空格。
+-   [`declaration-block-semicolon-space-before`](declaration-block-semicolon-space-before/README.md)：在声明块的分号之后前要求有一个空格或禁止有空白。
 -   [`declaration-block-single-line-max-declarations`](declaration-block-single-line-max-declarations/README.md): Limit the number of declaration within single line declaration blocks.
 -   [`declaration-block-single-line-max-declarations`](declaration-block-single-line-max-declarations/README.md)：限制单行声明块中声明的数量。
 -   [`declaration-block-trailing-semicolon`](declaration-block-trailing-semicolon/README.md): Require or disallow a trailing semicolon within declaration blocks.
@@ -227,9 +227,9 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`block-closing-brace-empty-line-before`](block-closing-brace-empty-line-before/README.md): Require or disallow an empty line before the closing brace of blocks.
 -   [`block-closing-brace-empty-line-before`](block-closing-brace-empty-line-before/README.md)：要求或禁止在闭括号之前有空行。
 -   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md): Require a newline or disallow whitespace after the closing brace of blocks (fixable).
--   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md)：在闭括号之后要求有一个换行符或禁止有空格 (fixable)。
+-   [`block-closing-brace-newline-after`](block-closing-brace-newline-after/README.md)：在闭括号之后要求有一个换行符或禁止有空白 (fixable)。
 -   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md): Require a newline or disallow whitespace before the closing brace of blocks (fixable).
--   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md)：在闭括号之前要求有一个换行符或禁止有空格 (fixable)。
+-   [`block-closing-brace-newline-before`](block-closing-brace-newline-before/README.md)：在闭括号之前要求有一个换行符或禁止有空白 (fixable)。
 -   [`block-closing-brace-space-after`](block-closing-brace-space-after/README.md): Require a single space or disallow whitespace after the closing brace of blocks.
 -   [`block-closing-brace-space-after`](block-closing-brace-space-after/README.md)：在闭括号之后要求有一个空格或禁止有空格。
 -   [`block-closing-brace-space-before`](block-closing-brace-space-before/README.md): Require a single space or disallow whitespace before the closing brace of blocks.
@@ -241,22 +241,22 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`block-opening-brace-newline-after`](block-opening-brace-newline-after/README.md): Require a newline after the opening brace of blocks (fixable).
 -   [`block-opening-brace-newline-after`](block-opening-brace-newline-after/README.md)：在开括号之后要求有一个换行符 (fixable)。
 -   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md): Require a newline or disallow whitespace before the opening brace of blocks (fixable).
--   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md)：在括开号之前要求有一个换行符或禁止有空格 (fixable)。
+-   [`block-opening-brace-newline-before`](block-opening-brace-newline-before/README.md)：在括开号之前要求有一个换行符或禁止有空白 (fixable)。
 -   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md): Require a single space or disallow whitespace after the opening brace of blocks (fixable).
--   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md)：在开括号之后要求有一个空格或禁止有空格 (fixable)。
+-   [`block-opening-brace-space-after`](block-opening-brace-space-after/README.md)：在开括号之后要求有一个空格或禁止有空白 (fixable)。
 -   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md): Require a single space or disallow whitespace before the opening brace of blocks (fixable).
--   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md)：在开括号之前要求有一个空格或禁止有空格 (fixable)。
+-   [`block-opening-brace-space-before`](block-opening-brace-space-before/README.md)：在开括号之前要求有一个空格或禁止有空白 (fixable)。
 
 ### Selector
 
 -   [`selector-attribute-brackets-space-inside`](selector-attribute-brackets-space-inside/README.md): Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
--   [`selector-attribute-brackets-space-inside`](selector-attribute-brackets-space-inside/README.md)：在特性选择器的方括号内要求有空格或禁止有空格。
+-   [`selector-attribute-brackets-space-inside`](selector-attribute-brackets-space-inside/README.md)：在特性选择器的方括号内要求有空格或禁止有空白。
 -   [`selector-attribute-operator-blacklist`](selector-attribute-operator-blacklist/README.md): Specify a blacklist of disallowed attribute operators.
 -   [`selector-attribute-operator-blacklist`](selector-attribute-operator-blacklist/README.md)：指定一个禁止使用的特性(attribute)操作符的黑名单。
 -   [`selector-attribute-operator-space-after`](selector-attribute-operator-space-after/README.md): Require a single space or disallow whitespace after operators within attribute selectors.
--   [`selector-attribute-operator-space-after`](selector-attribute-operator-space-after/README.md)：在特性选择器的操作符之后要求有一个空格或禁止有空格。
+-   [`selector-attribute-operator-space-after`](selector-attribute-operator-space-after/README.md)：在特性选择器的操作符之后要求有一个空格或禁止有空白。
 -   [`selector-attribute-operator-space-before`](selector-attribute-operator-space-before/README.md): Require a single space or disallow whitespace before operators within attribute selectors.
--   [`selector-attribute-operator-space-before`](selector-attribute-operator-space-before/README.md)：在特性选择器的操作符之前要求有一个空格或禁止有空格。
+-   [`selector-attribute-operator-space-before`](selector-attribute-operator-space-before/README.md)：在特性选择器的操作符之前要求有一个空格或禁止有空白。
 -   [`selector-attribute-operator-whitelist`](selector-attribute-operator-whitelist/README.md): Specify a whitelist of allowed attribute operators.
 -   [`selector-attribute-operator-whitelist`](selector-attribute-operator-whitelist/README.md)：指定允许使用的特性(attribute)操作符的白名单。
 -   [`selector-attribute-quotes`](selector-attribute-quotes/README.md): Require or disallow quotes for attribute values.
@@ -264,9 +264,9 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`selector-class-pattern`](selector-class-pattern/README.md): Specify a pattern for class selectors.
 -   [`selector-class-pattern`](selector-class-pattern/README.md)：为类选择器指定一个匹配模式。
 -   [`selector-combinator-space-after`](selector-combinator-space-after/README.md): Require a single space or disallow whitespace after the combinators of selectors (fixable).
--   [`selector-combinator-space-after`](selector-combinator-space-after/README.md)：在关系选择符之后要求有一个空格或禁止有空格 (fixable)。
+-   [`selector-combinator-space-after`](selector-combinator-space-after/README.md)：在关系选择符之后要求有一个空格或禁止有空白 (fixable)。
 -   [`selector-combinator-space-before`](selector-combinator-space-before/README.md): Require a single space or disallow whitespace before the combinators of selectors (fixable).
--   [`selector-combinator-space-before`](selector-combinator-space-before/README.md)：在关系选择符之前要求有一个空格或禁止有空格 (fixable)。
+-   [`selector-combinator-space-before`](selector-combinator-space-before/README.md)：在关系选择符之前要求有一个空格或禁止有空白 (fixable)。
 -   [`selector-descendant-combinator-no-non-space`](selector-descendant-combinator-no-non-space/README.md): Disallow non-space characters for descendant combinators of selectors.
 -   [`selector-descendant-combinator-no-non-space`](selector-descendant-combinator-no-non-space/README.md)：禁止包含选择符出现非空格字符。
 -   [`selector-id-pattern`](selector-id-pattern/README.md): Specify a pattern for id selectors.
@@ -300,7 +300,7 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`selector-pseudo-class-no-unknown`](selector-pseudo-class-no-unknown/README.md): Disallow unknown pseudo-class selectors.
 -   [`selector-pseudo-class-no-unknown`](selector-pseudo-class-no-unknown/README.md)：禁止使用未知的伪类选择器。
 -   [`selector-pseudo-class-parentheses-space-inside`](selector-pseudo-class-parentheses-space-inside/README.md): Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
--   [`selector-pseudo-class-parentheses-space-inside`](selector-pseudo-class-parentheses-space-inside/README.md)：在伪类选择器的括号内要求使用一个空格或禁止使用空格。
+-   [`selector-pseudo-class-parentheses-space-inside`](selector-pseudo-class-parentheses-space-inside/README.md)：在伪类选择器的括号内要求使用一个空格或禁止有空白。
 -   [`selector-pseudo-class-whitelist`](selector-pseudo-class-whitelist/README.md): Specify a whitelist of allowed pseudo-class selectors.
 -   [`selector-pseudo-class-whitelist`](selector-pseudo-class-whitelist/README.md)：指定一个允许使用的伪类选择器的白名单。
 -   [`selector-pseudo-element-case`](selector-pseudo-element-case/README.md): Specify lowercase or uppercase for pseudo-element selectors.
@@ -344,9 +344,9 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 ### Media feature
 
 -   [`media-feature-colon-space-after`](media-feature-colon-space-after/README.md): Require a single space or disallow whitespace after the colon in media features.
--   [`media-feature-colon-space-after`](media-feature-colon-space-after/README.md)：在 media 特性中的冒号之后要求有一个空格或禁止有空格。
+-   [`media-feature-colon-space-after`](media-feature-colon-space-after/README.md)：在 media 特性中的冒号之后要求有一个空格或禁止有空白。
 -   [`media-feature-colon-space-before`](media-feature-colon-space-before/README.md): Require a single space or disallow whitespace before the colon in media features.
--   [`media-feature-colon-space-before`](media-feature-colon-space-before/README.md)：在 media 特性中的冒号之前要求有一个空格或禁止有空格。
+-   [`media-feature-colon-space-before`](media-feature-colon-space-before/README.md)：在 media 特性中的冒号之前要求有一个空格或禁止有空白。
 -   [`media-feature-name-blacklist`](media-feature-name-blacklist/README.md): Specify a blacklist of disallowed media feature names.
 -   [`media-feature-name-blacklist`](media-feature-name-blacklist/README.md)：指定禁止使用的 media 特性名称的黑名单。
 -   [`media-feature-name-case`](media-feature-name-case/README.md): Specify lowercase or uppercase for media feature names.
@@ -360,11 +360,11 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`media-feature-no-missing-punctuation`](media-feature-no-missing-punctuation/README.md): Disallow missing punctuation for non-boolean media features.
 -   [`media-feature-no-missing-punctuation`](media-feature-no-missing-punctuation/README.md)：禁止非布尔类型的 media 特性缺少标点。
 -   [`media-feature-parentheses-space-inside`](media-feature-parentheses-space-inside/README.md): Require a single space or disallow whitespace on the inside of the parentheses within media features.
--   [`media-feature-parentheses-space-inside`](media-feature-parentheses-space-inside/README.md)：在media 特性的括号内要求有一个空格或禁止有空格。
+-   [`media-feature-parentheses-space-inside`](media-feature-parentheses-space-inside/README.md)：在media 特性的括号内要求有一个空格或禁止有空白。
 -   [`media-feature-range-operator-space-after`](media-feature-range-operator-space-after/README.md): Require a single space or disallow whitespace after the range operator in media features.
--   [`media-feature-range-operator-space-after`](media-feature-range-operator-space-after/README.md)：在 media 特性的范围操作符之后要求有一个空格或禁止有空格。
+-   [`media-feature-range-operator-space-after`](media-feature-range-operator-space-after/README.md)：在 media 特性的范围操作符之后要求有一个空格或禁止有空白。
 -   [`media-feature-range-operator-space-before`](media-feature-range-operator-space-before/README.md): Require a single space or disallow whitespace before the range operator in media features.
--   [`media-feature-range-operator-space-before`](media-feature-range-operator-space-before/README.md)：在 media 特性的范围操作符之前要求有一个空格或禁止有空格。
+-   [`media-feature-range-operator-space-before`](media-feature-range-operator-space-before/README.md)：在 media 特性的范围操作符之前要求有一个空格或禁止有空白。
 
 ### Custom media
 
@@ -374,13 +374,13 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 ### Media query list
 
 -   [`media-query-list-comma-newline-after`](media-query-list-comma-newline-after/README.md): Require a newline or disallow whitespace after the commas of media query lists.
--   [`media-query-list-comma-newline-after`](media-query-list-comma-newline-after/README.md)：在媒体查询的逗号之后要求有一个换行符或禁止有空格。
+-   [`media-query-list-comma-newline-after`](media-query-list-comma-newline-after/README.md)：在媒体查询的逗号之后要求有一个换行符或禁止有空白。
 -   [`media-query-list-comma-newline-before`](media-query-list-comma-newline-before/README.md): Require a newline or disallow whitespace before the commas of media query lists.
--   [`media-query-list-comma-newline-before`](media-query-list-comma-newline-before/README.md)：在媒体查询的逗号之前要求有一个换行符或禁止有空格。
+-   [`media-query-list-comma-newline-before`](media-query-list-comma-newline-before/README.md)：在媒体查询的逗号之前要求有一个换行符或禁止有空白。
 -   [`media-query-list-comma-space-after`](media-query-list-comma-space-after/README.md): Require a single space or disallow whitespace after the commas of media query lists.
--   [`media-query-list-comma-space-after`](media-query-list-comma-space-after/README.md)：在媒体查询的逗号之后要求有一个空格或禁止有空格。
+-   [`media-query-list-comma-space-after`](media-query-list-comma-space-after/README.md)：在媒体查询的逗号之后要求有一个空格或禁止有空白。
 -   [`media-query-list-comma-space-before`](media-query-list-comma-space-before/README.md): Require a single space or disallow whitespace before the commas of media query lists.
--   [`media-query-list-comma-space-before`](media-query-list-comma-space-before/README.md)：在媒体查询的逗号之前要求有一个空格或禁止有空格。
+-   [`media-query-list-comma-space-before`](media-query-list-comma-space-before/README.md)：在媒体查询的逗号之前要求有一个空格或禁止有空白。
 
 ### At-rule
 

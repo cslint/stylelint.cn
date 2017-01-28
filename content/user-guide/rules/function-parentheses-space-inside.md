@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace on the inside of the parentheses of functions.
 
-在函数的括号内要有一个空格或禁止有空格。
+在函数的括号内要有一个空格或禁止有空白。
 
 ```css
 a { transform: translate( 1, 1 ); }
@@ -46,7 +46,7 @@ a { transform: translate( 1, 1 ); }
 
 There *must never* be whitespace on the inside the parentheses.
 
-在括号内禁止有空格。
+在括号内禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -112,7 +112,7 @@ a {
 
 There *must never* be whitespace inside the parentheses of single-line functions.
 
-在单行函数的括号内禁止有空格。
+在单行函数的括号内禁止有空白。
 
 The following patterns are considered warnings:
 

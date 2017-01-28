@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace after the commas of media query lists.
 
-在媒体查询的逗号之后要求有一个换行符或禁止有空格。
+在媒体查询的逗号之后要求有一个换行符或禁止有空白。
 
 ```css
 @media screen and (color),
@@ -89,7 +89,7 @@ projection and (color) {}
 
 There *must never* be a whitespace after the commas in multi-line media query lists.
 
-在多行媒体查询列表的逗号之后禁止有空格。
+在多行媒体查询列表的逗号之后禁止有空白。
 
 The following patterns are considered warnings:
 

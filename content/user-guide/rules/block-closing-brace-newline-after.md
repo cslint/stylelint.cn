@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace after the closing brace of blocks.
 
-在闭括号之后要求有一个换行符或禁止有空格。
+在闭括号之后要求有一个换行符或禁止有空白。
 
 ```css
 a { color: pink; }
@@ -101,7 +101,7 @@ b { color: red; }
 
 There *must never* be whitespace after the closing brace in single-line blocks.
 
-在单行声明块的闭括号之后禁止有空格。
+在单行声明块的闭括号之后禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -157,7 +157,7 @@ b { color: red; }
 
 There *must never* be whitespace after the closing brace in multi-line blocks.
 
-在多行声明块的闭括号之后禁止有换行符。
+在多行声明块的闭括号之后禁止有空白。
 
 The following patterns are considered warnings:
 

@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace after the colon of declarations.
 
-在冒号之后要求有一个换行符或禁止有空格。
+在冒号之后要求有一个换行符或禁止有空白。
 
 ```css
 a {

@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace on the inside of the parentheses of functions.
 
-在函数的括号内要求有一个换行符或禁止有空格。
+在函数的括号内要求有一个换行符或禁止有空白。
 
 ```css
   a {

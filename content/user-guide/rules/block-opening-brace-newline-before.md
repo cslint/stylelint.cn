@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace before the opening brace of blocks.
 
-在括开号之前要求有一个换行符或禁止有空格。
+在括开号之前要求有一个换行符或禁止有空白。
 
 ```css
   a
@@ -90,7 +90,7 @@ color: pink; }
 
 There *must never* be whitespace before the opening brace in single-line blocks.
 
-在单行块的开括号之前禁止有空格。
+在单行块的开括号之前禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -160,7 +160,7 @@ color: pink; }
 
 There *must never* be whitespace before the opening brace in multi-line blocks.
 
-在多行块的开括号之前禁止有空格。
+在多行块的开括号之前禁止有空白。
 
 The following patterns are considered warnings:
 

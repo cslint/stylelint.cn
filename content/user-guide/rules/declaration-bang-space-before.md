@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the bang of declarations.
 
-在感叹号之前要求有一个空格或禁止有空格。
+在感叹号之前要求有一个空格或禁止有空白。
 
 ```css
 a { color: pink !important; }
@@ -50,7 +50,7 @@ a { color:pink ! important; }
 
 There *must never* be whitespace before the bang.
 
-在感叹号之前禁止有空格。
+在感叹号之前禁止有空白。
 
 The following patterns are considered warnings:
 

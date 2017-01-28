@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace after the commas of value lists.
 
-在值列表的逗号之后要求有一个换行符或禁止有空格。
+在值列表的逗号之后要求有一个换行符或禁止有空白。
 
 ```css
 a { background-size: 0,
@@ -81,7 +81,7 @@ a { background-size: 0,
 
 There *must never* be whitespace after the commas in multi-line value lists.
 
-在多行值列表的在逗号之后禁止有换行符。
+在多行值列表的在逗号之后禁止空白。
 
 The following patterns are considered warnings:
 

@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the closing brace of blocks.
 
-在闭括号之前要求有一个空格或禁止有空格。
+在闭括号之前要求有一个空格或禁止有空白。
 
 ```css
 a { color: pink; }
@@ -52,7 +52,7 @@ color: pink; }
 
 There *must never* be whitespace before the closing brace.
 
-在闭括号之前禁止有空格。
+在闭括号之前禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -111,7 +111,7 @@ color: pink;}
 
 There *must never* be whitespace before the closing brace in single-line blocks.
 
-在单行块的闭括号之前禁止有空格。
+在单行块的闭括号之前禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -166,7 +166,7 @@ color: pink; }
 
 There *must never* be whitespace before the closing brace in multi-line blocks.
 
-在多行块的闭括号之前禁止有空格。
+在多行块的闭括号之前禁止有空白。
 
 The following patterns are considered warnings:
 

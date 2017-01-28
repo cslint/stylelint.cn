@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the commas of media query lists.
 
-在媒体查询的逗号之前要求有一个空格或禁止有空格。
+在媒体查询的逗号之前要求有一个空格或禁止有空白。
 
 ```css
 @media screen and (color) ,projection and (color) {}

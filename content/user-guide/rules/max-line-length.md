@@ -12,7 +12,7 @@ a { color: red }
 
 Lines that exceed the maximum length but contain no whitespace (other than at the beginning of the line) are ignored.
 
-超过最大长度但不包含空格(除了一行的开始)的行将被忽略。
+超过最大长度但不包含空白(除了一行的开始)的行将被忽略。
 
 When evaluating the line length, `url(...)` functions are collapsed into just `url()`, because typically you have no control over the length of its argument. This means that long `url()` functions should not contribute to warnings.
 

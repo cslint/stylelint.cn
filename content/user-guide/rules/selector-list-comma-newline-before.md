@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace before the commas of selector lists.
 
-要求选择器列表的逗号之前有一个换行符或禁止在逗号之前有空白
+要求选择器列表的逗号之前有一个换行符或禁止在逗号之前有空白。
 
 ```css
     a
@@ -21,7 +21,7 @@ string: "always"|"always-multi-line"|"never-multi-line"
 
 There *must always* be a newline before the commas.
 
-在逗号之前 *必须* 有一个换行符。
+在逗号之前必须有一个换行符。
 
 The following patterns are considered warnings:
 
@@ -54,7 +54,7 @@ a
 
 There *must always* be a newline before the commas in multi-line selector lists.
 
-在多行选择器列表中，在逗号之前 **必须** 有一个换行符。
+在多行选择器列表中，在逗号之前必须有一个换行符。
 
 The following patterns are considered warnings:
 
@@ -88,7 +88,7 @@ b { color: pink; }
 
 There *must never* be whitespace before the commas in multi-line selector lists.
 
-在多行选择器列表中，在逗号之前 **禁止** 有空白。
+在多行选择器列表中，在逗号之前禁止有空白。
 
 The following patterns are considered warnings:
 

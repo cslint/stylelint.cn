@@ -12,7 +12,7 @@ Disallow empty selectors.
 
 Empty selectors (by themselves or within a selector list) invalidate a rule. This rule splits the selector list on `,`. Any part that has zero length or containing only whitespace is deemed empty.
 
-空选择器(它们本身或在选择器列表内)会使一个规则失效。该规则使用 `,` 把选择器列表分开。任何长度为 0 的 或只包含空格的部分被认为是空的。
+空选择器(它们本身或在选择器列表内)会使一个规则失效。该规则使用 `,` 把选择器列表分开。任何长度为 0 的 或只包含空白的部分被认为是空的。
 
 
 ## Options

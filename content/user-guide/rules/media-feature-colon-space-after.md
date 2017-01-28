@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace after the colon in media features.
 
-在 media 特性中的冒号之后要求有一个空格或禁止有空格。
+在 media 特性中的冒号之后要求有一个空格或禁止有空白。
 
 ```css
 @media (max-width: 600px) {}
@@ -50,7 +50,7 @@ The following patterns are *not* considered warnings:
 
 There *must never* be whitespace after the colon.
 
-在冒号之后禁止有空格。
+在冒号之后禁止有空白。
 
 The following patterns are considered warnings:
 

@@ -106,7 +106,7 @@ color: pink; }
 
 There *must never* be whitespace after the opening brace in multi-line blocks.
 
-在多行块的开括号之后禁止有空格。
+在多行块的开括号之后禁止有空白。
 
 The following patterns are considered warnings:
 

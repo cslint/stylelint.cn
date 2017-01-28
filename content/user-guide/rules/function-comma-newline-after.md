@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace after the commas of functions.
 
-在函数的逗号之后要求有一个换行符或禁止有空格。
+在函数的逗号之后要求有一个换行符或禁止有空白。
 
 ```css
 a { transform: translate(1,
@@ -89,7 +89,7 @@ a {
 
 There *must never* be a whitespace after the commas in multi-line functions.
 
-在多行函数的逗号之后禁止有空格。**（译者：这里应该是换行符）**
+在多行函数的逗号之后禁止有空白。
 
 The following patterns are considered warnings:
 

@@ -2,7 +2,7 @@
 
 Require a newline or disallow whitespace after the semicolons of declaration blocks.
 
-在声明块的分号之后要求有一个换行符或禁止有空格。
+在声明块的分号之后要求有一个换行符或禁止有空白。
 
 ```css
 a {
@@ -117,7 +117,7 @@ a {
 
 There *must never* be whitespace after the semicolon in multi-line declaration blocks.
 
-在多行声明块的分号之后禁止有空格。
+在多行声明块的分号之后禁止有空白。
 
 The following patterns are considered warnings:
 

@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the commas of functions.
 
-在函数的逗号之前要求有一个空格或禁止有空格。
+在函数的逗号之前要求有一个空格或禁止有空白。
 
 ```css
 a { transform: translate(1 ,1) }
@@ -50,7 +50,7 @@ a { transform: translate(1 , 1) }
 
 There *must never* be whitespace before the commas.
 
-在逗号之前禁止有空格。
+在逗号之前禁止有空白。
 
 The following patterns are considered warnings:
 

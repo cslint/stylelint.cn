@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the semicolons of declaration blocks.
 
-在声明块的分号之前要求有一个空格或禁止有空格。
+在声明块的分号之前要求有一个空格或禁止有空白。
 
 ```css
 a { color: pink; }
@@ -54,7 +54,7 @@ a { color: pink ; top: 0 ; }
 
 There *must never* be whitespace before the semicolons.
 
-在分号之前禁止有空格。
+在分号之前禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -114,7 +114,7 @@ a { color: pink ; top: 0 ; }
 
 There *must never* be whitespace before the semicolons in single-line declaration blocks.
 
-在单行声明块中的分号之前禁止有空格。
+在单行声明块中的分号之前禁止有空白。
 
 The following patterns are considered warnings:
 

@@ -2,7 +2,7 @@
 
 Require a single space or disallow whitespace before the commas of value lists.
 
-在值列表的逗号之前要求有一个空格或禁止有空格。
+在值列表的逗号之前要求有一个空格或禁止有空白。
 
 ```css
 a { background-size: 0 ,0; }
@@ -52,7 +52,7 @@ a { background-size: 0 ,
 
 There *must never* be whitespace before the commas.
 
-在逗号之前禁止有空格。
+在逗号之前禁止有空白。
 
 The following patterns are considered warnings:
 
@@ -116,7 +116,7 @@ a { background-size: 0
 
 There *must never* be whitespace before the commas in single-line value lists.
 
-在单行值列表的逗号之前禁止有空格。
+在单行值列表的逗号之前禁止有空白。
 
 The following patterns are considered warnings:
 
