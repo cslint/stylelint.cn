@@ -21,7 +21,7 @@
 -   [Processors](user-guide/processors.md): A list of community processors.
 -   [Processors](user-guide/processors.md)：社区 processors 列表。
 -   [Complementary tools](user-guide/complementary-tools.md): List of community editor plugins, build tool plugins and other tools.
--   [Complementary tools](user-guide/complementary-tools.md)：社区编辑器插件，构建工具插件和其它工具列表。
+-   [Complementary tools](user-guide/complementary-tools.md)：社区编辑器插件，构建工具插件和其他工具列表。
 -   [Release planning](user-guide/release-planning.md): Plans and calls-for-help for upcoming releases.
 -   [Release planning](user-guide/release-planning.md)：计划和即将发布的版本。
 -   [FAQ](user-guide/faq.md): Frequently asked questions about using and configuring stylelint.

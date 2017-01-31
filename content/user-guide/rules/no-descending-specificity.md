@@ -24,7 +24,7 @@ This rule enforces that practice *as best it can*. (It cannot catch every *actua
 
 Here's how it works: **This rule looks at the last *compound selector* in every full selector, and then compares it with other selectors in the stylesheet that end in the same way.**
 
-这里展示它是如何工作的：**该规则在整个选择器中查找复合选择器，然后与其它选择器进行比对。**
+这里展示它是如何工作的：**该规则在整个选择器中查找复合选择器，然后与其他选择器进行比对。**
 
 So `.foo .bar` (whose last compound selector is `.bar`) will be compared to `.bar` and `#baz .bar`, but not to `#baz .foo` or `.bar .foo`.
 

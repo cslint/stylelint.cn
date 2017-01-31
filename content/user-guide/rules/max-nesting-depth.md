@@ -118,7 +118,7 @@ a .foo__foo .bar .baz {}
 
 Ignore at-rules that only wrap other rules, and do not themselves have declaration blocks.
 
-忽略只包裹了其它规则，而且没有自己的声明块的 at 规则，
+忽略只包裹了其他规则，而且没有自己的声明块的 at 规则，
 
 For example, with `1`:
 

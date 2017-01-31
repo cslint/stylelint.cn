@@ -69,7 +69,7 @@ Only enforce the line-length limit for lines within comments.
 
 This does not apply to comments that are stuck in between other stuff, only to lines that begin at the beginning or in the middle of a comment.
 
-该选项并不适用于在其它代码直接的注释，只适用于在注释开头或中间位置的行。
+该选项并不适用于在其他代码直接的注释，只适用于在注释开头或中间位置的行。
 
 For example, with a maximum length of `30`.
 

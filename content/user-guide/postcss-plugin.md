@@ -2,7 +2,7 @@
 
 As with any other [PostCSS plugin](https://github.com/postcss/postcss#plugins), you can use stylelint's PostCSS plugin either with a PostCSS runner or with the PostCSS JS API directly.
 
-与其它[PostCSS 插件](https://github.com/postcss/postcss#plugins)一样，你可以使用 stylelint 的 PostCSS 插件
+与其他[PostCSS 插件](https://github.com/postcss/postcss#plugins)一样，你可以使用 stylelint 的 PostCSS 插件
 
 *However, if a dedicated stylelint task runner plugin [is available](complementary-tools.md) (e.g. [gulp-stylelint](https://github.com/olegskl/gulp-stylelint) or [grunt-stylelint](https://github.com/wikimedia/grunt-stylelint)) we recommend you use that rather than this plugin, as they provide better reporting.*
 
@@ -100,7 +100,7 @@ We recommend you lint your CSS before applying any transformations. You can do t
 
 You'll also need to use a reporter. *The stylelint plugin registers warnings via PostCSS*. Therefore, you'll want to use it with a PostCSS runner that prints warnings or another PostCSS plugin whose purpose is to format and print warnings (e.g. [`postcss-reporter`](https://github.com/postcss/postcss-reporter)).
 
-你也需要使用一个报告。*stylelint 插件通过 PostCSS 注册警告*。因此，你要结合 PostCSS 运行器或其它格式化打印警告的PostCSS 插件来使用。
+你也需要使用一个报告。*stylelint 插件通过 PostCSS 注册警告*。因此，你要结合 PostCSS 运行器或其他格式化打印警告的PostCSS 插件来使用。
 
 ### Example A
 

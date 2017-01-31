@@ -2,7 +2,7 @@
 
 Disallow property values that are ignored due to another property value in the same rule.
 
-禁止使用由于其它属性的原因而被忽略的属性。
+禁止使用由于其他属性的原因而被忽略的属性。
 
 ```css
 a { display: inline; width: 100px; }
@@ -12,7 +12,7 @@ a { display: inline; width: 100px; }
 
 Certain property value pairs rule out other property value pairs, causing them to be ignored by the browser. For example, when an element has display: inline, any further declarations about width, height and margin-top properties will be ignored. Sometimes this is confusing: maybe you forgot that your margin-top will have no effect because the element has display: inline, so you spend a while struggling to figure out what you've done wrong. This rule protects against that confusion by ensuring that within a single rule you don't use property values that are ruled out by other property values in that same rule.
 
-某些属性会导致其它属性被浏览器忽略。比如，一个内联元素会忽略 width，height 和 margin-top 等。有时，这很令人感到困惑：可能你忘记了 margin-top 在内联元素上没有任何效果，因此你花了一段时间找出你哪里出了问题。该规则防止出现这种困惑，确保你不会再使用某个属性时被其它属性排除掉。
+某些属性会导致其他属性被浏览器忽略。比如，一个内联元素会忽略 width，height 和 margin-top 等。有时，这很令人感到困惑：可能你忘记了 margin-top 在内联元素上没有任何效果，因此你花了一段时间找出你哪里出了问题。该规则防止出现这种困惑，确保你不会再使用某个属性时被其他属性排除掉。
 
 The rule warns when it finds:
 

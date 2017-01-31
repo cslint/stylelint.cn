@@ -45,7 +45,7 @@ string: "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"n
 
 There *must always* be a newline after the closing brace.
 
-在在多行声明块的闭括号之后必须有一个换行符。
+在闭括号之后必须有一个换行符。
 
 The following patterns are considered warnings:
 

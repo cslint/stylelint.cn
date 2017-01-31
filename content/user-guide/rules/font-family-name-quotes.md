@@ -31,7 +31,7 @@ string: "always-where-required"|"always-where-recommended"|"always-unless-keywor
 -   The `font` and `font-family` properties accept a short list of special **keywords**: `inherit`, `serif`, `sans-serif`, `cursive`, `fantasy`, and `monospace`. If you wrap these words in quotes, the browser will not interpret them as keywords, but will instead look for a font by that name (e.g. will look for a `"sans-serif"` font) -- which is almost *never* what you want. Instead, you use these keywords to point to the built-in, generic fallbacks (right?). Therefore, *all of the options below enforce no quotes around these keywords*. (If you actually want to use a font named `"sans-serif"`, turn this rule off.)
 - `font` 和 `font-family` 属性接受以下特定的 **关键字**：`inherit`，`serif`，`sans-serif`，`cursive`，`fantasy` 和 `monospace`。如果你想把这些词使用引号引起来，浏览器将不会把它们作为关键字解释，而是将查找对应名称的字体(比如，将查找一个 `"sans-serif"` 字体) -- 这可能不是你想要的结果。相反，你使用这些关键字指向内置的备选字体。因此，*下面所有的选项强制这些关键字不使用引号*。(如果你确实像要使用一个名为 `"sans-serif"` 的字体，关闭此规则。)
 -   Quotes are **recommended** [in the spec](https://www.w3.org/TR/CSS2/fonts.html#font-family-prop) with "font family names that contain white space, digits, or punctuation characters other than hyphens".
-- [在 w3 标准中](https://www.w3.org/TR/CSS2/fonts.html#font-family-prop) 推荐对“字体名中包含空格、数字或除了连字符之外的其它标点”的使用引号引起来。
+- [在 w3 标准中](https://www.w3.org/TR/CSS2/fonts.html#font-family-prop) 推荐对“字体名中包含空格、数字或除了连字符之外的其他标点”的使用引号引起来。
 -   Quotes are **required** around font-family names when they are not [valid CSS identifiers](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier). For example, a font family name requires quotes around it if it contains `$`, `!`, or `/`, but does not require quotes just because it contains spaces or a (non-initial) number or underscore. *You can probably bet that almost every font family name you use **will** be a valid CSS identifier*.
 - 当字体名称不是[有效的 CSS 标识符](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier)时，要求将它们使用引号引起来。例如，如果字体名中含有 `$`，`!` 或 `/`，要求使用引号，但如果它含有空格或一个非初始化的数字或下划线时，不要求使用引号。*你可能会打赌你使用的字体名都将是有效的 CSS 标识符*.
 -   Quotes should **never** be used around vendor prefixed system fonts such as `-apple-system` and `BlinkMacSystemFont`.
@@ -134,7 +134,7 @@ a { font: 1em Arial, sans-serif; }
 
 Expect quotes only when quotes are *recommended* according to the criteria above, and disallow quotes in all other cases. (This includes all cases where quotes are *required*, as well.)
 
-根据上述标准，当推荐使用引号时，使用引号。其它情况禁止使用。(包括所有要求使用引号的用例)
+根据上述标准，当推荐使用引号时，使用引号。其他情况禁止使用。(包括所有要求使用引号的用例)
 
 The following patterns are considered warnings:
 

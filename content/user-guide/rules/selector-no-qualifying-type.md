@@ -12,7 +12,7 @@ Disallow qualify a selector by type.
 
 A type selector is "qualifying" when it is compounded with (chained to) another selector (e.g. a.foo, a#foo). This rule does not regulate type selectors that are combined with other selectors via a combinator (e.g. a > .foo, a #foo).
 
-类型选择器与其它选择器复合使用时，具有限制作用 (如，a.foo，a#foo)。该规则不会检查通过复合选择符组合使用的选择器。
+类型选择器与其他选择器复合使用时，具有限制作用 (如，a.foo，a#foo)。该规则不会检查通过复合选择符组合使用的选择器。
 
 ## Options
 

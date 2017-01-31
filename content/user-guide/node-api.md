@@ -27,7 +27,7 @@ Options 是一个对象类型，带有以下属性。
 
 Though both `files` and `code` are "optional", you *must* have one and *cannot* have both. All other options are optional.
 
-虽然 `files` 和 `code` 是可选的，你必须使用其中一个，不能两个都不使用。所有其它的选项都是可选的。
+虽然 `files` 和 `code` 是可选的，你必须使用其中一个，不能两个都不使用。所有其他的选项都是可选的。
 
 ### `code`
 

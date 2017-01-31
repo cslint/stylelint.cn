@@ -210,7 +210,7 @@ Your configuration can *extend* an existing configuration (whether your own or a
 
 You can extend an array of existing configurations, with each item in the array taking precedence over the following (so the first item overrides everything else, the second item overrides everything but the first, the last gets overridden by everything else, etc.).
 
-你可以继承一个已存在的配置数组，数组中的每一项都优先于下一项(所以，第一项覆盖所有，第二项覆盖除了第一项之外的所有项，最后一项被其它所有项覆盖，等等)。
+你可以继承一个已存在的配置数组，数组中的每一项都优先于下一项(所以，第一项覆盖所有，第二项覆盖除了第一项之外的所有项，最后一项被其他所有项覆盖，等等)。
 
 For example, extending the [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard) and then changing indentation to tabs and turning off the `number-leading-zero` rule:
 
@@ -269,7 +269,7 @@ To use one, add a `"plugins"` array to your config, containing "locaters" identi
 
 Once the plugin is declared, within your `"rules"` object *you'll need to add options* for the plugin's rule(s), just like any standard rule. You will have to look at the plugin's documentation to know what the rule name should be.
 
-一旦声明了插件，在你的 `"rules"` 对象中，你将需要为插件的规则添加选项，就像其它标准的规则一样。你需要查看插件的文档去了解规则的名称。
+一旦声明了插件，在你的 `"rules"` 对象中，你将需要为插件的规则添加选项，就像其他标准的规则一样。你需要查看插件的文档去了解规则的名称。
 
 ```json
 {
@@ -378,7 +378,7 @@ The default severity level for all rules that do not have a severity specified i
 
 You can use a `.stylelintignore` file (or point to another ignore patterns file) to ignore specific files.
 
-你可以使用一个 `.stylelintignore` 文件(或指定其它的忽略模式文件)忽略指定的文件。
+你可以使用一个 `.stylelintignore` 文件(或指定其他的忽略模式文件)忽略指定的文件。
 
 (An alternative method is to use a `config.ignoreFiles`, described above.)
 

@@ -18,7 +18,7 @@ npm install -g stylelint
 
 The CLI outputs formatted results into `process.stdout`, which you can read with your human eyes or pipe elsewhere (e.g. write the information to a file).
 
-命令行将格式化后的结果输出到 `process.stdout`，你可以自行阅读或输出到其它地方（如，将信息写到一个文件）
+命令行将格式化后的结果输出到 `process.stdout`，你可以自行阅读或输出到其他地方（如，将信息写到一个文件）
 
 ### Examples
 

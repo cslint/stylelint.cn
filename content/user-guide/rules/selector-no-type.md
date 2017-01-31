@@ -62,7 +62,7 @@ The following patterns are *not* considered warnings:
 
 Allow compounded type selectors -- i.e. type selectors chained with other selectors.
 
-允许复合类型选择器 -- 如，类型选择器后面跟着一系列其它选择器。
+允许复合类型选择器 -- 如，类型选择器后面跟着一系列其他选择器。
 
 The following patterns are *not* considered warnings:
 

@@ -202,7 +202,7 @@ Here are all the rules within stylelint, grouped by the [*thing*](http://apps.wo
 -   [`declaration-block-no-duplicate-properties`](declaration-block-no-duplicate-properties/README.md): Disallow duplicate properties within declaration blocks.
 -   [`declaration-block-no-duplicate-properties`](declaration-block-no-duplicate-properties/README.md)：在声明的块中中禁止出现重复的属性。
 -   [`declaration-block-no-ignored-properties`](declaration-block-no-ignored-properties/README.md): Disallow property values that are ignored due to another property value in the same rule.
--   [`declaration-block-no-ignored-properties`](declaration-block-no-ignored-properties/README.md)：禁止使用由于其它属性的原因而被忽略的属性。
+-   [`declaration-block-no-ignored-properties`](declaration-block-no-ignored-properties/README.md)：禁止使用由于其他属性的原因而被忽略的属性。
 -   [`declaration-block-no-redundant-longhand-properties`](declaration-block-no-redundant-longhand-properties/README.md): Disallow longhand properties that can be combined into one shorthand property.
 -   [`declaration-block-no-redundant-longhand-properties`](declaration-block-no-redundant-longhand-properties/README.md)：禁止使用可以缩写却不缩写的属性。
 -   [`declaration-block-no-shorthand-property-overrides`](declaration-block-no-shorthand-property-overrides/README.md): Disallow shorthand properties that override related longhand properties within declaration blocks.

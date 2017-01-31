@@ -92,7 +92,7 @@ There are some important details to keep in mind:
 
 **By default, unlisted properties will be ignored.** So if you specify an array and do not include `display`, that means that the `display` property can be included before or after any other property. *This can be changed with the `unspecified` option* (see below).
 
-**默认情况下，不在列表中的属性将被忽略。** 如果你指定的数组不包括 `display`，这就意味着 `display` 属性可以放在其它任何属性之前或之后。*这可以通过使用 `unspecified` 选项来改变。*（见下文）。
+**默认情况下，不在列表中的属性将被忽略。** 如果你指定的数组不包括 `display`，这就意味着 `display` 属性可以放在其他任何属性之前或之后。*这可以通过使用 `unspecified` 选项来改变。*（见下文）。
 
 **If an (unprefixed) property name is not included in your array and it contains a hyphen (e.g. `padding-left`), this rule will look for the string before that first hyphen in your array (e.g. `padding`) and use that position.** This means that you do not have to specify each extension of the root property; you can just specify the root property and the extensions will be accounted for.
 
@@ -104,7 +104,7 @@ For example, if you have included `border` in your array but not `border-top`, t
 
 Other relevant rules include `margin`, `border`, `animation`, `transition`, etc.
 
-其它相关的规则包括 `margin`，`border`，`animation`，`transition` 等。
+其他相关的规则包括 `margin`，`border`，`animation`，`transition` 等。
 
 Using this fallback, the order of these hyphenated relative to their peer extensions (e.g. `border-top` to `border-bottom`) will be *arbitrary*. If you would like to enforce a specific ordering (e.g. always put `border-right` before `border-left`), you should specify those particular names in your array.
 
@@ -489,7 +489,7 @@ These options only apply if you've defined your own array of properties.
 
 Default behavior is the same as `"ignore"`: an unspecified property can appear before or after any other property.
 
-默认行为同 `"ignore"` 一样：未指定的属性可以出现在其它任何属性之前或之后。
+默认行为同 `"ignore"` 一样：未指定的属性可以出现在其他任何属性之前或之后。
 
 With `"top"`, unspecified properties are expected *before* any specified properties. With `"bottom"`, unspecified properties are expected *after* any specified properties. With `"bottomAlphabetical"`, unspecified properties are expected *after* any specified properties, and the unspecified properties are expected to be in alphabetical order.
 
